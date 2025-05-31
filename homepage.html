@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="CSS FILES/reset.css">
+    <link rel="stylesheet" href="CSS FILES/general.css">
+    <link rel="stylesheet" href="CSS FILES/homepage.css">
+    <script src="JS FILES/general.js" defer></script>
+    <script src="JS FILES/imageAnim.js" defer></script>
 </head>
 <body>
     <nav> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
+        <div>
+           <h5> Logo </h5>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Gallery</a></li>
+            </ul>
+        </div>
     </nav>
+
+
+    <header>
+        <img class="banner" src="MEDIA/alahiAI.png" alt="Image Banner">
+    </header>
+
+    <article>
+        <section class="social-media">
+            <a class = socialsButton><img src = "MEDIA/logoExp1.png" alt="Instagram"></a>
+            <a class = socialsButton><img src = "MEDIA/logoExp1.png" alt="TikTok"></a>
+            <a class = socialsButton><img src = "MEDIA/logoExp1.png" alt="Other"></a>
+    </article>
+    <div class="image-rollover-container">
+        <div class="image-rollover-track">
+            <img src="MEDIA/image1.png" alt="Gallery Image 1">
+            <img src="MEDIA/image2.png" alt="Gallery Image 1">
+            <img src="MEDIA/image3.png" alt="Gallery Image 1">
+            <!-- Duplicate images for seamless looping -->
+            <img src="MEDIA/image1.png" alt="Gallery Image 1">
+            <img src="MEDIA/image2.png" alt="Gallery Image 1">
+            <img src="MEDIA/image3.png" alt="Gallery Image 1">
+        </div>
+    </div>
 </body>
 </html>
