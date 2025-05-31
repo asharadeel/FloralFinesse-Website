@@ -1,0 +1,22 @@
+
+.about-me {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 0em 2em 2em 2em;
+
+    img{ 
+        width: auto;
+        height: 50vh;
+        border-radius: 20px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 50%;
+    }
+
+}

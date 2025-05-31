@@ -1,23 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0em 1em 0em 1em;
-    background-color: aqua;
-    
+    background: linear-gradient(rgba(255, 175, 247, 0.5), rgba(0, 0, 0, 0.1));
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    background-color: red;
 }
 
 nav ul li{
     padding: 0.5em;
-    margin: 0.5em;
+
+    a{
+        border-radius: 0px !important;
+    }
+}
+
+h1{
+    font-size: 3em;
+    padding: 1em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+h2{
+    padding: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 *{
@@ -27,6 +57,53 @@ nav ul li{
 a{
     text-decoration: none;
     color: black;
+    transition: all 0.2s ease-in-out;
+    padding: 1em;
+
+}
+
+a:hover{
+    color: black;
+    background: rgba(196, 148, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 2px  rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+
+footer{
+    background: linear-gradient(rgba(255, 175, 247, 0.5), rgba(0, 0, 0, 0.1));
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    ul{
+        padding: 1em;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    li{
+        list-style-type: none;
+        padding: 0.5em;
+    }
+}
+
+.logo{
+    width: 2em;
+    height: auto;
+    border-radius: 50%;
 }
 
 .banner{
@@ -35,9 +112,28 @@ a{
     object-fit: cover;
 }
 
-.socialsButton{
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
     img{
-        width: 2em;
-        height: 2em;
+        width: 8em;
+        height: 5em;
+    }
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0em;
+        width: 100%;
     }
 }
