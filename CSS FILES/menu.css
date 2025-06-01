@@ -78,8 +78,10 @@ button:hover{
     }
 
     .itemType{
+        border-radius: 0px;
         display: flex;
-        height: 4em;
+        align-items: center;
+        height: 6em;
         overflow-x: auto;
     }
 
@@ -88,8 +90,14 @@ button:hover{
         overflow: auto;
     }
 
+    .item{
+        width: 50%;
+    }
     button{
-        height: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         width: auto;
         font-size: 100%;
     

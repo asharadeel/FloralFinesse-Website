@@ -6,8 +6,9 @@
     padding: 0em 2em 2em 2em;
 
     img{ 
-        width: auto;
-        height: 50vh;
+        max-width: 20vw;
+        max-height: auto;
+        min-width: 20%;
         border-radius: 20px;
     }
     div{
@@ -19,4 +20,14 @@
         width: 50%;
     }
 
+}
+
+
+@media (max-width: 768px) {
+ 
+    .about-me{
+        img{
+            max-width: 45vw;
+        }
+    }
 }
