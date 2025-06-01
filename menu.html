@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="stylesheet" href="CSS FILES/menu.css">
 
+    <script src="JS FILES/general.js" defer></script>
     <script src="JS FILES/menuHandle.js" defer></script>
 </head>
 <body>
-       <nav> 
+    <div id="top"></div>
+    <nav class="desktopNavBar"> 
         <div>
            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
         </div>
@@ -25,15 +27,32 @@
         </div>
     </nav>
 
+    <nav class="mobileNavBar">
+        <div class="nav-header">
+            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
+            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
 
 
     <h1>Menu</h1>
 
+    <section class="briefMenu">
+        <p> This is the brief menu. Press to view the expanded FULL menu</p>
+        <a href="detailedMenu.html">View</a>
+    </section>
 
     <div class="menuContainer">
-    
         <section class = "itemType">
-            <h2> Section One </h2>
+            <h2> SECTION </h2>
             <button id="cakesButton" class="itemTypeButton">Cakes</button>
             <button id="milkCakeButton" class="itemTypeButton">Milk Cakes</button>
             
@@ -44,70 +63,115 @@
             <div id ="featuredMenu" class="menuList">
                 <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 1</h3></a>
+                    <div>
+                        <p class="itemName">Item 1</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
 
                 <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 2</h3></a>
+                    <div>
+                        <p class="itemName">Item 2</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
             </div>
 
             <div id="cakesMenu" class="menuList">
                 <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 1</h3></a>
+                    <div>
+                        <p class="itemName">Item 1</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 2</h3></a>
+                    <div>
+                        <p class="itemName">Item 2</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 3</h3></a>
+                    <div>
+                        <p class="itemName">Item 3</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 4</h3></a>
+                    <div>
+                        <p class="itemName">Item 4</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 5</h3></a>
+                    <div>
+                        <p class="itemName">Item 5</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 6</h3></a>
+                    <div>
+                        <p class="itemName">Item 6</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 7</h3></a>
+                    <div>
+                        <p class="itemName">Item 7</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 8</h3></a>
+                    <div>
+                        <p class="itemName">Item 8</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
             </div>
 
             <div id="milkCakeMenu" class="menuList">
+                  <div class="item">
+                    <img src="IMGFILES/itemTemplate.jpg">
+                    <div>
+                        <p class="itemName">Item 1</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
+                </div>
                 <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 1</h3></a>
+                    <div>
+                        <p class="itemName">Item 2</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 2</h3></a>
+                    <div>
+                        <p class="itemName">Item 3</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 3</h3></a>
+                    <div>
+                        <p class="itemName">Item 4</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
-                  <div class="item">
+                <div class="item">
                     <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 4</h3></a>
-                </div>
-                  <div class="item">
-                    <img src="IMGFILES/itemTemplate.jpg">
-                    <a><h4>Item 5</h3></a>
+                    <div>
+                        <p class="itemName">Item 5</p>
+                        <p class="itemPrice">£99</p>
+                    </div>
                 </div>
             </div>
 

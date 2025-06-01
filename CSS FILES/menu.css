@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+/*
+
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-caption-regular {
+  font-family: "PT Serif Caption", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
 
 .item{
     display: flex;
@@ -12,8 +29,14 @@
         border-radius: 10%;
         margin: 0.2em;
     }
-    a{
-        width: 90%;
+    .itemName{
+        padding: 0.5em 0em 0em 0em;
+        font-family: 'Cal Sans', Arial, Helvetica, sans-serif;
+    }
+    .itemPrice{
+        font-family: "PT Serif Caption", serif;
+        padding: 0em 0em 0em 0.5em;
+        font-size: 0.75em;
     }
 }
 
@@ -23,11 +46,15 @@ button{
     text-align: left;
     padding: 1em;
     background: transparent;
+
+    transition: all 0.2s ease-in-out;
 }
 
 button:hover{
-    background-color: lightgray;
+    background-color: rgba(202, 202, 202, 0.5);
     cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .menuContainer{
@@ -53,13 +80,29 @@ button:hover{
     max-height: 50vh; 
     
 }
-
-
 .menuList{
-    background-color: lightblue;
+    background-color: rgb(230, 230, 230);
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
+}
+
+.briefMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 3em 0em 3em; 
+    a{
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    a:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 50%;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
 }
 
 /* Optional: Responsive adjustments */
@@ -92,6 +135,7 @@ button:hover{
     .item{
         width: 50%;
     }
+
     button{
         display: flex;
         align-items: center;
@@ -99,9 +143,5 @@ button:hover{
         height: 100%;
         width: auto;
         font-size: 100%;
-    
     }
-    
-
-
 }

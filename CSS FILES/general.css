@@ -40,8 +40,30 @@ body{
     box-sizing: border-box;
 }
 
+#menu-toggle{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5em !important;
 
-nav{
+    background: transparent !important;
+    border: none !important;
+
+    transition: all 0.2s ease-in-out !important;
+
+}
+
+#menu-toggle:hover{
+    background-color: white !important;
+    border-radius: 50% !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.mobileNavBar{
+    display:none;
+}
+
+.desktopNavBar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,13 +75,13 @@ nav{
     background-size: 20em;
 }
 
-nav ul{
+.desktopNavBar ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-nav ul li{
+.desktopNavBar ul li{
     padding: 0.5em;
 
     a{
@@ -144,9 +166,10 @@ footer{
 }
 
 .logo{
-    width: 2em;
-    height: auto;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
+      
 }
 
 .banner{
@@ -193,15 +216,62 @@ footer{
 }
 
 @media (max-width: 768px) {
-    nav{
-        flex-direction: column;
-        padding: 1em;
+    .desktopNavBar{
+        display: none;
     }
 
-    nav ul{
+    h1,h2,h3,h4,h5,h6{
+        text-align: center;
+    }
+
+    .mobileNavBar{
+        display: block;
+        flex-direction: column;
+        padding: 1em !important;
+
+        align-items: center;
+
+        background: linear-gradient(rgb(255, 255, 255,0.2), rgba(255, 255, 255, 0.6)),url(../IMGFILES/bakeryPattern.png);
+        background-size: 20em;
+    }
+
+    .mobileNavBar ul{
+        list-style-type: none;
         flex-direction: column;
         align-items: center;
         padding: 0em;
         width: 100%;
+    }
+
+
+    .mobileNavBar ul li{
+        padding: 0.5em;
+
+        a{
+            border-radius: 0px !important;
+        }
+    }
+
+    .mobileNavBar .nav-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.active{
+        max-height: 10em;
+    }
+
+    footer{
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

@@ -1,4 +1,9 @@
 
+body{
+    background-image: url('../GIFFILES/starPattern.gif');
+    background-size: 10em;
+}
+
 .about-me {
     display: flex;
     flex: 1;
@@ -26,8 +31,20 @@
 @media (max-width: 768px) {
  
     .about-me{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        div{
+            padding: 1em;
+            width: 100%;
+        }
         img{
             max-width: 45vw;
         }
+        
+
+        
     }
 }

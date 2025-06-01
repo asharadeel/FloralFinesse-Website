@@ -11,7 +11,8 @@
     <script src="JS FILES/imageAnim.js" defer></script>
 </head>
 <body>
-    <nav id="top"> 
+    <div id="top"></div>
+    <nav class="desktopNavBar"> 
         <div>
            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
         </div>
@@ -25,6 +26,20 @@
         </div>
     </nav>
 
+    <nav class="mobileNavBar">
+        <div class="nav-header">
+            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
+            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="image-rollover-container"> 
         <div class="image-rollover-track">
@@ -39,7 +54,7 @@
     </div>
 
     <header class="banner">
-        <img src="IMGFILES/logo.png" alt="Image Banner">
+        <img src="IMGFILES/tempLogo.png" alt="Image Banner">
     </header>
 
     
