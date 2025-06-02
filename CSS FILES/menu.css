@@ -71,6 +71,7 @@ button:hover{
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr;   
     max-height: 50vh;
 
+    overflow-y: auto;
     background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.3), rgba(255,255,255,0.8)), url('../GIFFILES/pattern2.gif');
     background-size: 20em;
 }
@@ -89,11 +90,12 @@ button:hover{
 }
 
 .briefMenu{
+    margin: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0em 3em 0em 3em; 
+    padding: 0em 2em 0em 2em; 
     a{
         background-color: rgba(0,0,0,0.1);
         border-radius: 10px;
@@ -121,6 +123,10 @@ button:hover{
     }
 
     .itemType{
+        h2{
+            display: none;
+        }
+        
         border-radius: 0px;
         display: flex;
         align-items: center;
@@ -145,4 +151,22 @@ button:hover{
         width: auto;
         font-size: 100%;
     }
+
+    .briefMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 2em 2em 2em; 
+    a{
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    a:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 50%;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+}
+
 }

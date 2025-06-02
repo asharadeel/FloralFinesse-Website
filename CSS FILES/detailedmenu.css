@@ -27,8 +27,9 @@ header{
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
-    width: 20em;
+    width: 10em;
     height: 10em;
+    margin: 0em 2em;
 }
 
 h3{
@@ -141,6 +142,24 @@ h2{
             padding: 1em 0em;
         }
     }
+
+    .briefMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 2em 2em 2em; 
+    a{
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 10px;
+    }
+    a:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 50%;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+}
+
 
 }
 
