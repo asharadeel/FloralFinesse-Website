@@ -23,7 +23,36 @@ FONT ": CAL SANS
 
 */
 
+/* scroll to top button */
 
+.topbutton {
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    z-index: 1000;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.topbutton img {
+    background-color: white;
+
+    width: 2em; 
+    height: 2em;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.topbutton img:hover {
+    transform: scale(1.2);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     display: flex;
@@ -201,8 +230,8 @@ footer{
         width: 100%;
         padding: 1em;
         img{
-            width: auto;
-            height: 50vh;
+            width: 100%;
+            height: auto;
         }
         button{
             border: none;
