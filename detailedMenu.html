@@ -10,17 +10,19 @@
 
     <script src="JS FILES/general.js" defer></script>
     <script src="JS FILES/menuHandle.js" defer></script>
+    <script src="JS FILES/imageView.js" defer></script>
 </head>
 <body>
     <div id="top"></div>
     <nav class="desktopNavBar"> 
         <div>
-           <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
+            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
         </div>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="menu.html">Mini Menu</a></li>
+                <li><a href="menu.html">Products</a></li>
+                <li><a href="detailedMenu.html">Full Menu</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -35,7 +37,8 @@
         <div class="nav-links">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li><a href="menu.html">Mini Menu</a></li>
+                <li><a href="menu.html">Products</a></li>
+                <li><a href="detailedMenu.html">Full Menu</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -46,9 +49,17 @@
         <h1> Menu </h1>
     </header>
 
+    
     <section class="briefMenu">
         <a href="menu.html">Shorter Menu</a>
     </section>
+
+        <!-- Fullscreen overlay (hidden by default) -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="fullscreen-image" id="fullscreenImage">
+    </div>
+
 
     <section id="itemTypeMenu" class = "itemTypeMenu">
         <a href="#cakes" class="itemTypeButton">Cakes</a>
@@ -76,9 +87,9 @@
                 <p class="priceText">Price: $20</p>
                 <p class="descriptionText">Brief Description and stuff bla bla bla cooking</p>
             </div>
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
         </div>
 
          <div class="itemCard">
@@ -87,9 +98,9 @@
                 <p class="priceText">Price: $20</p>
                 <p class="descriptionText">Brief Description and stuff bla bla bla cooking</p>
             </div>
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
         </div>
 
     </section>
@@ -103,9 +114,9 @@
                 <p class="priceText">Price: $20</p>
                 <p class="descriptionText">Brief Description and stuff bla bla bla cooking</p>
             </div>
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
         </div>
 
          <div class="itemCard">
@@ -114,9 +125,9 @@
                 <p class="priceText">Price: $20</p>
                 <p class="descriptionText">THIS IS THE GOATED CAKE ICL</p>
             </div>
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
-            <img src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake"> 
         </div>
 
     </section>

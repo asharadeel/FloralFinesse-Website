@@ -27,6 +27,31 @@ body{
 
 }
 
+.links{
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.socialCard{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img{
+        padding: 1em;
+        width: 30%;
+        height: auto;
+    }
+}
+
 
 @media (max-width: 768px) {
  
@@ -46,5 +71,16 @@ body{
         
 
         
+    }
+
+    .links{
+        padding: 1em;
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialCard{
+        margin: 1em;
     }
 }

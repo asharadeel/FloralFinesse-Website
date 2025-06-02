@@ -163,6 +163,11 @@ a:hover{
     transition: all 0.2s ease-in-out;
 }
 
+aside{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
 
 footer{
     background: linear-gradient(rgb(255, 255, 255,0.2), rgba(255, 255, 255, 0.6)),url(../IMGFILES/bakeryPattern.png);
@@ -244,6 +249,54 @@ footer{
     }
 }
 
+
+/* IMAGE VIEW STUFF */
+
+.clickable-image {
+    max-width: 300px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.clickable-image:hover {
+    transform: scale(1.02);
+}
+
+/* Fullscreen overlay */
+.fullscreen-overlay {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    text-align: center;
+    padding: 2em;
+}
+
+.fullscreen-image {
+
+    max-height: 90%;
+    max-width: 90%;
+    margin-top: 5vh;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 @media (max-width: 768px) {
     .desktopNavBar{
         display: none;
@@ -294,7 +347,7 @@ footer{
     }
 
     .nav-links.active{
-        max-height: 10em;
+        max-height: 12em;
     }
 
     footer{
