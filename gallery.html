@@ -9,7 +9,9 @@
 
     <script src="JS FILES/general.js" defer></script>
     <script src="JS FILES/imageRoll.js" defer></script>
+    <script src="JS FILES/imageView.js" defer></script>
 </head>
+
 <body>
     <div id="top"></div>
     <nav class="desktopNavBar"> 
@@ -20,9 +22,10 @@
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="menu.html">Products</a></li>
-                <li><a href="detailedMenu.html">Full Menu</a></li>
+                <li><a href="plainMenu.html">Menu</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
             </ul>
         </div>
     </nav>
@@ -36,17 +39,42 @@
             <ul>
                 <li><a href="homepage.html">Home</a></li>
                 <li><a href="menu.html">Products</a></li>
-                <li><a href="detailedMenu.html">Full Menu</a></li>
+                <li><a href="plainMenu.html">Menu</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
             </ul>
         </div>
     </nav>
 
     <h1>Gallery</h1>
 
-    <h2> Not done yet. </h2>
     
+            <!-- Fullscreen overlay (hidden by default) -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="fullscreen-image" id="fullscreenImage">
+    </div>
+
+    <section class="image-row-2">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+    </section>
+
+    <section class="image-row-2">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+    </section>
+
+    <section class="image-row-2">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+        <img src="IMGFILES/imageTemplate.jpg" class="clickable-image">
+    </section>
+
+
     <article class="gallery">
         <div class = "buttons">
             <button id="previous"><img src="IMGFILES/LeftArrowIcon.png"></button>

@@ -57,6 +57,25 @@ button:hover{
     transition: all 0.2s ease-in-out;
 }
 
+.menuSelector{
+    padding: 1em;
+    display:  flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    border-top: 2px solid rgba(0,0,0,0.1);
+    button{
+        border-radius: 1em;
+        width: 100%;
+    }
+
+    button:hover{
+        transform: scale(0.95);
+        color: white;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url('../GIFFILES/pattern2.gif');
+    }
+}
+
 .menuContainer{
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -110,6 +129,27 @@ button:hover{
 
 /* Optional: Responsive adjustments */
 @media (max-width: 768px) {
+    .menuSelector{
+        display: flex;
+        flex-direction: column;
+        padding: 0em;
+        align-items: center;
+        justify-content: center;
+        h2{
+            display: none;
+        }
+        button{
+            font-family: 'Cal Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            margin: 0em;
+        }
+        button:hover{
+            color: white;
+            transform: scale(0.95);
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url('../GIFFILES/pattern2.gif');
+        }
+    }
+
     .menuContainer{
         all: unset;
         display: flex;

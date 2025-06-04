@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="CSS FILES/reset.css">
+    <link rel="stylesheet" href="CSS FILES/general.css">
+    <link rel="stylesheet" href="CSS FILES/detailedmenu.css">
+
+    <script src="JS FILES/general.js" defer></script>
+    <script src="JS FILES/menuHandle.js" defer></script>
+    <script src="JS FILES/imageView.js" defer></script>
+</head>
+<body>
+    <div id="top"></div>
+    <nav class="desktopNavBar"> 
+        <div>
+            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Products</a></li>
+                <li><a href="plainMenu.html">Menu</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="mobileNavBar">
+        <div class="nav-header">
+            <img class="logo" src="IMGFILES/tempLogo.png" alt="Logo">
+            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="menu.html">Products</a></li>
+                <li><a href="plainMenu.html">Menu</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="review.html">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <h1> Menu </h1>
+    </header>
+
+
+    
+    <!-- Fullscreen overlay (hidden by default) -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <img class="fullscreen-image" id="fullscreenImage">
+    </div>
+
+    <div id="menuList">
+        <section id="itemTypeMenu" class = "itemTypeMenu">
+            <a href="#cupcakes" class="itemTypeButton">Cupcakes</a>
+            <a href="#cakesicles" class="itemTypeButton">Cakesicles</a>
+            <a href="#cheesecakes" class="itemTypeButton">Cheesecakes</a>
+            <a href="#choclatestrawberries" class="itemTypeButton">Choc Strawberries</a>
+            <a href="#cakes" class="itemTypeButton">Cakes</a>
+            <a href="#bentocakes" class="itemTypeButton">Bento Cakes</a>
+            <a href="#cakepops" class="itemTypeButton">Cakepops</a>
+            <a href="#brownies" class="itemTypeButton">Brownies</a>
+            <a href="#milkCakes" class="itemTypeButton">Tres Leches</a>
+        </section>
+
+
+        <section id="cupcakes" class="itemSection">
+            <h1>Cupcakes</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>6 Cupcakes</h3>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>12 Cupcakes</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>16 Cupcakes</h3>
+                <p class="priceText">Price: £25</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>20 Cupcakes</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+            <h2> Flavours* </h2>
+            <div class="itemCard flavourList">
+                <h4>Vanilla Cake</h4>
+                <h4>Choclate Cake</h4>
+                <h4>Red Velvet Cake</h4>
+                <h4>Oreo Flavoured</h4>
+                <h4>Biscoff Flavoured</h4>
+                <h4>Kinder Flavoured</h4>
+            </div>
+            
+        </section>
+
+        <section id="cakesicles" class="itemSection">
+            <h1>Cakesicles</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>4 Cakesicles</h3>
+                <p class="priceText">Price: £10</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>6 Cakesicles</h3>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>8 Cakesicles</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>10 Cakesicles</h3>
+                <p class="priceText">Price: £25</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>15 Cakesicles</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+            <h2> Flavours* </h2>
+            <div class="itemCard flavourList">
+                <h4>Vanilla</h4>
+                <h4>Choclate</h4>
+                <h4>Red Velvet</h4>
+            </div>
+
+        </section>
+
+        <section id="cheesecakes" class="itemSection">
+            <h1>Cheesecakes</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>6" Cheesecake</h3>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>7" Cheesecake</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>8" Cheesecake</h3>
+                <p class="priceText">Price: £25</p>
+            </div>
+
+             <h2> Flavours </h2>
+            <div class="itemCard flavourList">
+                <h4>Classic Digestive</h4>
+                <h4>Oreo</h4>
+                <h4>Biscoff</h4>
+                <h4>Strawberry</h4>
+                <h4>Nutella</h4>
+                <h4>Kinder</h4>
+            </div>
+
+        </section>
+
+        <section id="choclatestrawberries" class="itemSection">
+            <h1>Choclate Strawberries</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>Box of 9 Strawberries</h3>
+                <p class="priceText">Price: £12</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Box of 12 Strawberries</h3>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Box of 15 Strawberries</h3>
+                <p class="priceText">Price: £18</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Box of 20 Strawberries</h3>
+                <p class="priceText">Price: £22</p>
+            </div>
+
+        </section>
+
+        <section id="cakes" class="itemSection">
+            <h1>Cakes</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>5" Cake</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>6" Cake</h3>
+                <p class="priceText">Price: £35</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>7" Cake</h3>
+                <p class="priceText">Price: £40</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>8" Cake</h3>
+                <p class="priceText">Price: £45</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Bento Box Cakes</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Digit/Letter Cakes</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+            <h2> Flavours </h2>
+            <div class="itemCard flavourList">
+                <h4>Vanilla</h4>
+                <h4>Chocolate</h4>
+                <h4>Red Velvet</h4>
+            </div>
+
+        </section>
+
+        <section id="bentocakes" class="itemSection">
+            <h1>Bento Cakes</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>Single Bento Cake</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Bento Cake + 2 Cupcakes</h3>
+                <p class="priceText">Price: £25</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Bento Cake + 8 Cupcakes</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+        </section>
+
+        <section id="cakepops" class="itemSection">
+            <h1>Cakepops</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>6 cake pops</h3>
+                <p class="priceText">Price: £12</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>10 cake pops</h3>
+                <p class="priceText">Price: £16</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>15 cake pops</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>20 cake pops</h3>
+                <p class="priceText">Price: £24</p>
+            </div>
+
+             <h2> Flavours* </h2>
+            <div class="itemCard flavourList">
+                <h4>Oreo</h4>
+                <h4>Biscoff</h4>
+                <h4>Nutella</h4>
+                <h4>Vanilla Cake</h4>
+                <h4>Chocolate Cake</h4>
+                <br>
+            </div>
+
+        </section>
+
+        <section id="brownies" class="itemSection">
+            <h1>Brownies</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>6 slices</h3>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>9 slices</h3>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>12 slices</h3>
+                <p class="priceText">Price: £25</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>15 slices</h3>
+                <p class="priceText">Price: £30</p>
+            </div>
+
+
+            <h2> Flavours </h2>
+            <div class="itemCard flavourList">
+                <h4>Plain</h4>
+                <h4>White Choclate Drizzle</h4>
+                <h4>Strawberries and White Choclate</h4>
+                <h4>Nutella</h4>
+                <h4>Biscoff</h4>
+                <h4>Oreo</h4>
+                <h4>Bueno</h4>
+            </div>
+
+        </section>
+
+        <section id="milkCakes" class="itemSection">
+            <h1>Tres Leches (Milk Cakes)</h1>
+
+            <div class="itemCard">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+                <img class="clickable-image" src="IMGFILES/imageTemplate.jpg" alt="Chocolate Cake">
+            </div>
+
+            <div class="itemCard">
+                <h3>Regular Tray</h3>
+                <p> 10"x10"</p>
+                <p class="priceText">Price: £15</p>
+            </div>
+
+            <div class="itemCard">
+                <h3>Large Tray</h3>
+                <p>13"x10"</p>
+                <p class="priceText">Price: £20</p>
+            </div>
+
+            <h2> Flavours </h2>
+            <div class="itemCard flavourList">
+                <h4>Classic</h4>
+                <h4>Biscoff</h4>
+                <h4>Nutella</h4>
+                <h4>Mango</h4>
+                <h4>Oreo</h4>
+            </div>
+        </section>
+    </div>
+
+
+    <h4 class="customNote"><br>* Can be customised to any design or flavour requested</h4>
+
+
+    <footer>
+        <p>2025 ASHAR <br> All rights reserved.</p>
+        <p>Follow us on social media for updates and news.</p>
+        <ul>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.tiktok.com">TikTok</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
