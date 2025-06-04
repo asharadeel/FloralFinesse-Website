@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 
 
 /* FONTS 
@@ -21,10 +22,19 @@ FONT ": CAL SANS
   font-style: normal;
 }
 
+.libre-barcode-128-text-regular {
+  font-family: "Libre Barcode 128 Text", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 */
 
 /* scroll to top button */
 
+.barcode{
+    font-family: 'Libre Barcode 128 Text', 'Arial', 'Helvetica', sans-serif;
+    font-size: 2em;
+}
 
 .topbutton {
     position: fixed;
@@ -105,7 +115,11 @@ body{
     align-items: center;
     padding: 0em 1em 0em 1em;
 
-    background: linear-gradient(rgb(255, 255, 255,0.2), rgba(255, 255, 255, 0.6)),url(../IMGFILES/bakeryPattern.png);
+    color: white;
+    a{
+        color: white;
+    }
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
     background-size: 20em;
 }
 
@@ -183,7 +197,8 @@ aside{
 }
 
 footer{
-    background: linear-gradient(rgb(255, 255, 255,0.2), rgba(255, 255, 255, 0.6)),url(../IMGFILES/bakeryPattern.png);
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
     background-size: 20em;
     width: 100%;
     height: auto;
@@ -196,7 +211,7 @@ footer{
     text-align: center;
     a{
         text-decoration: none;
-        color: black;
+        color: white;
         font-weight: bold;
     }
     ul{
@@ -339,9 +354,13 @@ footer{
         padding: 1em !important;
 
         align-items: center;
-
-        background: linear-gradient(rgb(255, 255, 255,0.2), rgba(255, 255, 255, 0.6)),url(../IMGFILES/bakeryPattern.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
         background-size: 20em;
+        color: white;
+        a{
+            color: white;
+        }
+
     }
 
     .mobileNavBar ul{
