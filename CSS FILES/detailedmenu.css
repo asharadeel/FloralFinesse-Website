@@ -13,16 +13,29 @@ header{
 }
 
 .itemTypeMenu{
+    z-index: 50;
+    position: fixed;
+    bottom: 5em;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    height: 10rem;
+    background-color: white;
+
     display: flex;
     align-items: center;
     flex-direction: row;
-    overflow-x: auto;      /* Enable horizontal scrolling */
-    overflow-y: hidden;    /* Hide vertical scroll */
+    overflow-x: auto;     
+    overflow-y: hidden;    
     gap: 1em;
     padding: 1em 0em;
     text-align: center;
+    border-radius: 4em;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.6);
+    
     a{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/cakeIcon.gif);
+        height: 8em;
+        width: 8em;
         background-size: 100%;
         border-radius: 10rem;
         box-shadow: 0.5rem 0.5rem 1rem  rgba(225, 0, 255, 0.2);
@@ -40,6 +53,7 @@ header{
     width: 10em;
     height: 10em;
     margin: 0em 2em;
+    
 }
 
 #menuList{
@@ -60,14 +74,14 @@ h3{
 
 h1{
     padding: 1em 0em;
-    margin: 1em 0.75em 0em 0.75em;
+    margin: 1em 0.5em 0em 0.5em;
 
     border-top: 5px solid rgba(0,0,0,0.2);
     
 }
 
 .flavourList{
-    background-color: rgba(255, 0, 221, 0.425); 
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/dazzlingBakes.gif) !important;
     margin: 1em !important;
     border-radius: 1rem;
     
@@ -98,6 +112,7 @@ h1{
         object-fit:cover;
 
         display: block;
+        
     }
 
 }
@@ -127,6 +142,72 @@ h2{
 
 
 
+
+
+/*BUTTONS*/
+#cupcakeButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cake.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cakesicleButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cakesicle.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cheesecakeButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cheesecake.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#chocstrawButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/choclatestrawberry.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cakeButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cake.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bentoButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/bento.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cakepopButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cakepop.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#brownieButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/brownie.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#milkcakeButton{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/milkcake.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media (max-width: 768px) {
     header{
         h1{
@@ -155,8 +236,15 @@ h2{
     }
 
     .itemTypeMenu{
-        height: 8em;
+        height: 10em;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        margin: 0.2em;
+        bottom: 2em; 
+        border-radius: 2em;
     }
+
     .itemTypeButton{
         height: 6rem;
         width: 6rem;

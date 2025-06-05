@@ -26,8 +26,11 @@
     width: 15%;
     img{
         width: 90%;
+        height: 90%;
         border-radius: 10%;
         margin: 0.2em;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
     }
     .itemName{
         padding: 0.5em 0em 0em 0em;
@@ -102,7 +105,8 @@ button:hover{
 }
 
 .menuList{
-    background-color: rgb(230, 230, 230);
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.3), rgba(255,255,255,0.8)), url('../GIFFILES/purplestars2.gif');
+    background-size: 10em;
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
