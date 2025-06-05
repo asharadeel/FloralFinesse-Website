@@ -15,7 +15,7 @@ header{
 .itemTypeMenu{
     z-index: 50;
     position: fixed;
-    bottom: 5em;
+    bottom: 1em;
     width: 60%;
     left: 20%;
     right: 20%;

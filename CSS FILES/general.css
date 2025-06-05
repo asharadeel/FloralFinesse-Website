@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /* FONTS 
 FONT 1 : DynaPuff
@@ -27,9 +27,30 @@ FONT ": CAL SANS
   font-weight: 400;
   font-style: normal;
 }
+
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 */
 
 /* scroll to top button */
+
+
+.quote{
+    font-family: "Pacifico", cursive, Arial, Helvetica, sans-serif;
+    font-size: 3em !important;
+    padding: 1em;
+    color: rgb(255, 224, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../GIFFILES/purpleStars.gif);
+    margin: 1em;
+    border-radius: 2em;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
 
 .barcode{
     font-family: 'Libre Barcode 128 Text', 'Arial', 'Helvetica', sans-serif;
@@ -403,7 +424,24 @@ footer{
     100% { background-position: 100% 50%; }
 }
 
-
+.order{
+    padding: 1em;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../GIFFILES/purplestars2.gif);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    p{
+        text-align: center;
+        padding: 1em;
+        font-size: 1.5em;
+    }
+    a{
+        padding: 0em;
+        color: purple;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    a:hover{
+        all:unset;
+    }
+}
 @media (max-width: 768px) {
     .desktopNavBar{
         display: none;
@@ -459,7 +497,7 @@ footer{
     }
 
     .nav-links.active{
-        max-height: 12em;
+        max-height: 17em;
     }
 
     footer{
@@ -518,4 +556,16 @@ footer{
         pointer-events: none;
     }
 
+    .quote{
+        font-size: 1.25em !important;
+        text-align: center !important;
+        padding: 2em 0.5em !important;
+        margin: 1em 0em !important;
+    }
+    .order{
+        p{
+            font-size: 1.25em;
+            text-align: justify !important;
+        }
+    }
 }
