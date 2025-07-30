@@ -1,39 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
 
 /* FONTS 
-FONT 1 : DynaPuff
-.dynapuff-<uniquifier> {
-  font-family: "DynaPuff", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
 
 
-FONT ": CAL SANS
+
 .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.libre-barcode-128-text-regular {
-  font-family: "Libre Barcode 128 Text", system-ui;
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 
-.pacifico-regular {
-  font-family: "Pacifico", cursive;
+.source-serif-4-<uniquifier> {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    // <weight>: Use a value from 200 to 900
+    // <uniquifier>: Use a unique and descriptive class name
+
+}
+
+
+.libre-barcode-39-text-regular {
+  font-family: "Libre Barcode 39 Text", system-ui;
   font-weight: 400;
   font-style: normal;
 }
+
 
 */
 
@@ -41,19 +44,14 @@ FONT ": CAL SANS
 
 
 .quote{
-    font-family: "Pacifico", cursive, Arial, Helvetica, sans-serif;
+    font-family: "Great Vibes", cursive, Arial, Helvetica, sans-serif;
     font-size: 3em !important;
-    padding: 1em;
-    color: rgb(255, 224, 255);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../GIFFILES/purpleStars.gif);
-    margin: 1em;
-    border-radius: 2em;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 164, 164);
 }
 
 
 .barcode{
-    font-family: 'Libre Barcode 128 Text', 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Libre Barcode 39 Text', 'Arial', 'Helvetica', sans-serif;
     font-size: 2em;
 }
 
@@ -97,8 +95,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.95)),url(../GIFFILES/purplestars2.gif);
-    background-size: 5em;
+    background-color: #000000;
 }
 
 *{
@@ -135,13 +132,13 @@ body{
     flex-wrap: wrap;
     align-items: center;
     padding: 0em 1em 0em 1em;
-
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url(../IMGFILES/elegantRoses.png);
+    background-size: 20em;
     color: white;
     a{
         color: white;
     }
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
-    background-size: 20em;
+    
 }
 
 .desktopNavBar ul{
@@ -158,16 +155,20 @@ body{
     }
 }
 
+p{
+    color: white;
+}
+
 h1, h2, h3, h4, h5, h6{
-    font-family: "Cal Sans", Arial, Helvetica, sans-serif;
+    font-family: "Source Serif 4", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
+    color: white ;
 }
 
 h1{
     font-size: 3em;
     padding: 1em;
     font-weight: bold;
-    color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     
 }
@@ -176,30 +177,28 @@ h2{
     padding: 1em;
     font-size: 2em;
     font-weight: bold;
-    color: black;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 
 *{
-    font-family: "DynaPuff", Arial, Helvetica, sans-serif;
+    font-family: "Source Serif 4", Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
 
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(219, 219, 219);
     transition: all 0.2s ease-in-out;
     padding: 1em;
 
 }
 
 a:hover{
-    color: black;
-    background: rgba(196, 148, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 2px  rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px white;
+    font-size: 1.1em;
     transition: all 0.2s ease-in-out;
 }
 
@@ -219,7 +218,7 @@ aside{
 
 footer{
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),url(../IMGFILES/elegantRoses.png);
     background-size: 20em;
     width: 100%;
     height: auto;
@@ -260,8 +259,10 @@ footer{
     display: flex;
     justify-content: center;
 
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/cupcakes.gif);
-    
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)), url(../GIFFILES/roseRain.gif);
+    background-size: 100%;
+    border-radius: 20px;
+    margin: 0em 1em;
     img{
         padding: 1em;
         border-radius: 50%;
@@ -410,9 +411,9 @@ footer{
 .animated-rainbow-border {
     border: 0.25em solid transparent;
     background: 
-        linear-gradient(white, white) padding-box,
+        linear-gradient(rgb(16, 16, 16), rgb(36, 36, 36)) padding-box,
         linear-gradient(270deg, 
-            #ff0080, #7928ca, #ff00d4, #9900ff, #50017b, #ff0080
+            #ff0080, #ff0606, #630f0f, #1f0c0c, #000000, #ff0000
         ) border-box;
     background-size: 200% 200%;
     background-position: 0% 50%;
@@ -426,7 +427,8 @@ footer{
 
 .order{
     padding: 1em;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)), url(../GIFFILES/purplestars2.gif);
+    background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(8, 8, 8, 0.9)), url(../GIFFILES/circle\ flowerw.gif);
+    background-size: 100%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     p{
         text-align: center;
@@ -457,7 +459,7 @@ footer{
         padding: 1em 2em !important;
 
         align-items: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),url(../IMGFILES/bakeryPattern.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url(../IMGFILES/elegantRoses.png);
         background-size: 20em;
         color: white;
         a{
@@ -497,7 +499,7 @@ footer{
     }
 
     .nav-links.active{
-        max-height: 17em;
+        max-height: 15em;
     }
 
     footer{

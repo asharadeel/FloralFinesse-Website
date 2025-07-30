@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 
 header{
     h1{
         border: 0px;
-        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/pigeonBakery.gif) !important;
+        background: linear-gradient(rgba(96, 33, 33, 0.5), rgba(48, 24, 24, 0.9)) !important;
         background-size: 20%;
         margin: 0em 0em 1em 0em;
         padding: 1em;
-        box-shadow: 0.5rem 0px 1rem  rgba(0,0,0,0.5);
     }
 }
 
@@ -16,11 +18,11 @@ header{
     z-index: 50;
     position: fixed;
     bottom: 1em;
-    width: 60%;
-    left: 20%;
-    right: 20%;
+    width: 45%;
+    left: 27.5%;
+    right: 27.5%;
     height: 10rem;
-    background-color: white;
+    background-color: rgb(37, 37, 37);
 
     display: flex;
     align-items: center;
@@ -38,7 +40,7 @@ header{
         width: 8em;
         background-size: 100%;
         border-radius: 10rem;
-        box-shadow: 0.5rem 0.5rem 1rem  rgba(225, 0, 255, 0.2);
+        box-shadow: 0.5rem 0.5rem 1rem  rgba(255, 0, 0, 0.2);
         color: white;
     }
     
@@ -66,6 +68,7 @@ h3{
 
 .priceText{
     font-family: 'PT Serif Caption', serif;
+    color: white;
 }
 
 .descriptionText{
@@ -75,28 +78,18 @@ h3{
 h1{
     padding: 1em 0em;
     margin: 1em 0.5em 0em 0.5em;
-
-    border-top: 5px solid rgba(0,0,0,0.2);
-    
 }
 
-.flavourList{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/dazzlingBakes.gif) !important;
-    margin: 1em !important;
-    border-radius: 1rem;
-    
-}
 
 .customNote{
-    color: rgb(255, 0, 255);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255);
+    color: rgb(247, 152, 152);
     font-size:  1em;
     padding: 1em;
 }
 
 .itemCard{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -145,74 +138,45 @@ h2{
 
 
 /*BUTTONS*/
-#cupcakeButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cake.gif);
+#bouquetButton{
+    font-family: "Fjalla One", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/boquetIcon.gif);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#cakesicleButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cakesicle.gif);
+#wrappingButton{
+    font-family: "Fjalla One", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/wrappingIcon.gif);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#cheesecakeButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cheesecake.gif);
+#extrasButton{
+    font-family: "Fjalla One", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/extraIcon.gif);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#chocstrawButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/choclatestrawberry.gif);
+#othersButton{
+    font-family: "Fjalla One", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/othersIcon.gif);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#cakeButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cake.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-#bentoButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/bento.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#cakepopButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/cakepop.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#brownieButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/brownie.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#milkcakeButton{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../PRODUCTIMGS/milkcake.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 @media (max-width: 768px) {
     header{
         h1{
             border: 0px;
-            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/pigeonBakery.gif);
+        background: linear-gradient(rgba(96, 33, 33, 0.5), rgba(48, 24, 24, 0.9)), url(../GIFFILES/mvoing\ roses.gif) !important;
             background-size: 100%;
             margin: 0em;
             padding: 2em;
@@ -224,9 +188,8 @@ h2{
         font-size: 3em;
         margin: 0em 0em 1em 0em;
         padding-bottom: 1em;
-        border-top: 5px solid rgba(0,0,0,0.2);
-        border-bottom: 5px solid rgba(0,0,0,0.2);
-        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.9)), url(../GIFFILES/pattern2.gif) !important;
+
+        background: linear-gradient(rgba(86, 46, 46, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/roseRain.gif) !important;
     }
 
     h2{
