@@ -33,7 +33,7 @@ img{
     justify-content: center;
 
     
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),url(../GIFFILES/fallingRoses.gif);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
     background-size: 150%;
     border-radius: 2em;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);

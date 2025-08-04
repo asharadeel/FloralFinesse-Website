@@ -132,8 +132,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     padding: 0em 1em 0em 1em;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url(../IMGFILES/elegantRoses.png);
-    background-size: 20em;
+    background: linear-gradient(rgba(132, 0, 0, 0.613), rgba(143, 0, 0, 0.4));    background-size: 20em;
     color: white;
     a{
         color: white;
@@ -218,12 +217,11 @@ aside{
 
 footer{
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),url(../IMGFILES/elegantRoses.png);
+    background: linear-gradient(rgba(132, 0, 0, 0.613), rgba(143, 0, 0, 0.4));
     background-size: 20em;
     width: 100%;
     height: auto;
     padding: 2em;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -238,7 +236,7 @@ footer{
         padding: 1em;
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
     }
     li{
@@ -427,23 +425,36 @@ footer{
 
 .order{
     padding: 1em;
-    background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(8, 8, 8, 0.9)), url(../GIFFILES/circle\ flowerw.gif);
+    background: linear-gradient(rgba(29, 29, 29, 0.8), rgba(8, 8, 8, 0.9));
     background-size: 100%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    p{
-        text-align: center;
-        padding: 1em;
+    h3{
+        text-align: left;
+        font-size: 2em;
+        padding: 1em 0em;
+        margin: 0em 1em;
+    }
+    p, ul{
+        list-style: none;;
+        color: white;
+        text-align: left;
+        padding: 1em 0em;
+        margin: 0em 2em;
         font-size: 1.5em;
+    }
+    ul{
+        padding-left: 2em;
     }
     a{
         padding: 0em;
-        color: purple;
+        color: rgb(235, 146, 146);
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
     a:hover{
         all:unset;
     }
 }
+
 @media (max-width: 768px) {
     .desktopNavBar{
         display: none;
@@ -459,8 +470,7 @@ footer{
         padding: 1em 2em !important;
 
         align-items: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),url(../IMGFILES/elegantRoses.png);
-        background-size: 20em;
+        background: linear-gradient(rgba(132, 0, 0, 0.613), rgba(143, 0, 0, 0.4));        background-size: 20em;
         color: white;
         a{
             padding: 0em;
@@ -565,9 +575,19 @@ footer{
         margin: 1em 0em !important;
     }
     .order{
-        p{
+        h2, h3{
+            text-align: center;
+            font-size: 2em;
+        }        
+        p, ul{
             font-size: 1.25em;
             text-align: justify !important;
+        }
+        ul{
+            padding-left: 1em;
+        }
+        li{
+
         }
     }
 }
