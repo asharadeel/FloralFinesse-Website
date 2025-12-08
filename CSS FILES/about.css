@@ -25,6 +25,10 @@ img{
 
 }
 
+.order{
+    background: black;
+}
+
 .links{
     margin: 1em;
     display: flex;
@@ -47,7 +51,7 @@ img{
     justify-content: center;
     img{
         padding: 1em;
-        width: 30%;
+        width: 20%;
         height: auto;
         border-radius: 50%;
     }

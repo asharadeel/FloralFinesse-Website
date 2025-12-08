@@ -2,14 +2,16 @@
     margin: 1em;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2em;
-    background-color: black;
+    background-color: rgb(44, 0, 0);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-align: justify;
     h2{
         padding: 1rem;
         margin: 0em;
     }
     p{
         padding: 1rem;
+        font-size: 1.2em;
     }
 }
 
