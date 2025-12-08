@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* FONTS 
 
@@ -38,6 +39,14 @@
 }
 
 
+
+--- FORMAL FONT ----
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 */
 
 /* scroll to top button */
@@ -181,7 +190,7 @@ h2{
 
 
 *{
-    font-family: "Source Serif 4", Arial, Helvetica, sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
 
 }
@@ -217,7 +226,7 @@ aside{
 
 footer{
     color: white;
-    background: linear-gradient(rgba(132, 0, 0, 0.613), rgba(143, 0, 0, 0.4));
+    background: linear-gradient(rgba(199, 5, 5, 0.613), rgba(215, 6, 6, 0.757), rgba(234, 3, 3, 0.654));        background-size: 20em;
     background-size: 20em;
     width: 100%;
     height: auto;
@@ -470,7 +479,7 @@ footer{
         padding: 1em 2em !important;
 
         align-items: center;
-        background: linear-gradient(rgba(132, 0, 0, 0.613), rgba(143, 0, 0, 0.4));        background-size: 20em;
+        background: linear-gradient(rgba(199, 5, 5, 0.613), rgba(215, 6, 6, 0.757), rgba(234, 3, 3, 0.654));        background-size: 20em;
         color: white;
         a{
             padding: 0em;
@@ -573,7 +582,9 @@ footer{
         text-align: center !important;
         padding: 2em 0.5em !important;
         margin: 1em 0em !important;
+        font-style: normal !important;
     }
+
     .order{
         h2, h3{
             text-align: center;
