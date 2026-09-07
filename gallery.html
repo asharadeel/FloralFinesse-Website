@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse: Gallery</title>
+    <meta name="description" content="A gallery of handcrafted everlasting rose bouquets by Floral Finesse.">
+    <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <script src="JS FILES/general.js" defer></script>
-    <script src="JS FILES/imageRoll.js" defer></script>
+    <script src="JS FILES/effects.js" defer></script>
     <script src="JS FILES/imageView.js" defer></script>
 </head>
 
 <body>
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -32,8 +35,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -48,44 +57,51 @@
     </nav>
 
 
-    <h1>Gallery</h1>
+    <header class="pageHeader">
+        <p class="eyebrow">Selected Work</p>
+        <h1>Gallery</h1>
+        <div class="divider"><span></span></div>
+        <p class="eyebrow">Tap any piece to view it in full</p>
+    </header>
 
-    
+
             <!-- Fullscreen overlay (hidden by default) -->
     <div class="fullscreen-overlay" id="fullscreenOverlay">
         <span class="close-btn" id="closeBtn">&times;</span>
-        <img class="fullscreen-image" id="fullscreenImage">
+        <img class="fullscreen-image" id="fullscreenImage" alt="">
     </div>
 
-    <section class="image-row-2">
-        <img src="PRODUCTIMGS/1.png" class="clickable-image">
-        <img src="PRODUCTIMGS/2.png" class="clickable-image">
+    <section class="image-row-2 reveal">
+        <img src="PRODUCTIMGS/1.png" class="clickable-image" alt="Rose bouquet">
+        <img src="PRODUCTIMGS/2.png" class="clickable-image" alt="Rose bouquet">
     </section>
 
-    <section class="image-row-4">
-        <img src="PRODUCTIMGS/3.png" class="clickable-image">
-        <img src="PRODUCTIMGS/4.png" class="clickable-image">
-        <img src="PRODUCTIMGS/5.png" class="clickable-image">
-        <img src="PRODUCTIMGS/6.png" class="clickable-image">
+    <section class="image-row-4 reveal">
+        <img src="PRODUCTIMGS/3.png" class="clickable-image" alt="Rose bouquet">
+        <img src="PRODUCTIMGS/4.png" class="clickable-image" alt="Rose bouquet">
+        <img src="PRODUCTIMGS/5.png" class="clickable-image" alt="Rose bouquet">
+        <img src="PRODUCTIMGS/6.png" class="clickable-image" alt="Rose bouquet">
     </section>
 
-    <section class="image-row-3">
-        <img src="PRODUCTIMGS/7.png" class="clickable-image">
-        <img src="PRODUCTIMGS/1.png" class="clickable-image">
-        <img src="PRODUCTIMGS/2.png" class="clickable-image">
+    <section class="image-row-3 reveal">
+        <img src="PRODUCTIMGS/7.png" class="clickable-image" alt="Rose bouquet">
+        <img src="PRODUCTIMGS/100roses.png" class="clickable-image" alt="100 rose bouquet">
+        <img src="PRODUCTIMGS/50roses.png" class="clickable-image" alt="50 rose bouquet">
     </section>
 
-    <!--
-    <article class="gallery">
-        <div class = "buttons">
-            <button id="previous"><img src="IMGFILES/LeftArrowIcon.png"></button>
-            <div>
-                <img id="images" src="IMGFILES/imageTemplate.jpg">
-            </div>
-            <button id="next"> <img src="IMGFILES/RightArrowIcon.png"></button>
-        </div>
-    </article>
-    -->
+    <section class="image-row-3 reveal">
+        <img src="PRODUCTIMGS/25roses.png" class="clickable-image" alt="25 rose bouquet">
+        <img src="PRODUCTIMGS/15roses.png" class="clickable-image" alt="15 rose bouquet">
+        <img src="PRODUCTIMGS/7roses.png" class="clickable-image" alt="7 rose bouquet">
+    </section>
+
+
+    <section class="links reveal">
+        <p class="eyebrow">Seen Something You Like?</p>
+        <h2>Order Yours</h2>
+        <div class="divider"><span></span></div>
+        <a href="order.html" class="btn">Place an Order</a>
+    </section>
 
 
     <footer>
@@ -96,9 +112,14 @@
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
 
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 
 </body>
 </html>

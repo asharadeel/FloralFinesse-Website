@@ -1,8 +1,23 @@
 /* super class - browser reset */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p{
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote{
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+button{
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
 }

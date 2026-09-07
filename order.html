@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse: Order</title>
+    <meta name="description" content="How to order a handcrafted everlasting rose bouquet from Floral Finesse by Zara.">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
-    <link rel="stylesheet" href="CSS FILES/about.css">
 
     <script src="JS FILES/general.js" defer></script>
-    
+    <script src="JS FILES/effects.js" defer></script>
 </head>
 <body>
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -32,8 +34,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -46,76 +54,98 @@
             </ul>
         </div>
     </nav>
-    <h1>Order</h1>
+
+
+    <header class="pageHeader">
+        <p class="eyebrow">Made to Order</p>
+        <h1>Order</h1>
+        <div class="divider"><span></span></div>
+    </header>
+
 
     <section class="order">
-        <h2>ORDER</h2>
+        <div class="orderNotice reveal">
+            <p>Please note, flowers are <b>NOT FRESH</b> and are <b>ARTIFICIAL</b>, so will last forever.</p>
+        </div>
 
-        <p> Please note, flowers are <b>NOT FRESH</b> and are <b>ARTIFICIAL</b>, so will last forever.</p>
-        
-        <h3> How to Order </h3>
-        <p> Order to me using my 
-            <a href="https://www.instagram.com/floralfinessebyzara/">instagram, @floralfinessebyzara</a>
-            , or my 
-            <a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">tiktok, @floralfinessebyzara</a>
-            . Alternatively, you can text me at
-            <a href="tel:+447888183145">+44 7888 183145</a>
-            to place your order!
-        </p>
+        <div class="orderBlock reveal">
+            <p class="eyebrow">Step One</p>
+            <h3>How to Order</h3>
+            <p>
+                Order to me using my
+                <a href="https://www.instagram.com/floralfinessebyzara/">instagram, @floralfinessebyzara</a>,
+                or my
+                <a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">tiktok, @floralfinessebyzara</a>.
+                Alternatively, you can text me at
+                <a href="tel:+447888183145">+44 7888 183145</a>
+                to place your order.
+            </p>
+        </div>
 
-        <h3> Required Information </h3>
-        <p>
-            When ordering, please provide your
-            <ul>
+        <div class="orderBlock reveal">
+            <p class="eyebrow">Step Two</p>
+            <h3>Required Information</h3>
+            <p>When ordering, please provide your</p>
+            <ul class="orderList">
                 <li>Name</li>
                 <li>Number of Roses</li>
                 <li>Colours</li>
                 <li>Style of wrapping</li>
-                <li>Ribbon Colour </li>
+                <li>Ribbon Colour</li>
                 <li>Any add-ons</li>
-                <li>Required date & time of collection/delivery</li>
+                <li>Required date &amp; time of collection/delivery</li>
             </ul>
-        </p>
+        </div>
 
-        <h3> Payment </h3>
-        <p>
-            A 50% non-refundable deposit must be made via <b>bank transfer</b> to confirm your order. 
-            The remaining <b>50%</b> must be paid before collection/delivery, same day is accepted.
-        </p>
+        <div class="orderBlock reveal">
+            <p class="eyebrow">Step Three</p>
+            <h3>Payment</h3>
+            <p>
+                A 50% non-refundable deposit must be made via <b>bank transfer</b> to confirm your order.
+                The remaining <b>50%</b> must be paid before collection/delivery, same day is accepted.
+            </p>
+        </div>
 
-        <h3> Collection/Delivery </h3>
-        <p>
-            Enquire for local deliveries (SE London)
-            <br>
-            Nationwide delivery starts at £12, can take up to 12 days
-        </p>
+        <div class="orderBlock reveal">
+            <p class="eyebrow">Step Four</p>
+            <h3>Collection &amp; Delivery</h3>
+            <p>
+                Enquire for local deliveries (SE London).
+                <br>
+                Nationwide delivery starts at £12, and can take up to 12 days.
+            </p>
+        </div>
 
-        <h3> Loyalty Scheme</h3>
-        <p> 
-            As a thank you for continued support, returining customers will receive a 35% on their 5th order!
-        </p>
+        <div class="orderBlock reveal">
+            <p class="eyebrow">Thank You</p>
+            <h3>Loyalty Scheme</h3>
+            <p>
+                As a thank you for continued support, returning customers will receive 35% off their 5th order.
+            </p>
+        </div>
     </section>
 
-    <article class="links">
-        <h2> Contact Me </h2>
+
+    <article class="links reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Contact Me</h2>
+        <div class="divider"><span></span></div>
+
         <section class="socialCard">
             <img class="socialIcon" src="IMGFILES/instagramIcon.png" alt="Instagram Icon">
             <p><a href="https://www.instagram.com/floralfinessebyzara/">@floralfinessebyzara</a></p>
         </section>
 
         <section class="socialCard">
-            <img class="socialIcon" src="IMGFILES/tkiktokIcon.png" alt="Instagram Icon">
+            <img class="socialIcon" src="IMGFILES/tkiktokIcon.png" alt="TikTok Icon">
             <p><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">@floralfinessebyzara</a></p>
         </section>
 
         <section class="socialCard">
             <img class="socialIcon" src="IMGFILES/phoneIcon.png" alt="Phone Icon">
-            <p><a href="tel:+447888183145">Text at +447888183145</a></p>
+            <p><a href="tel:+447888183145">+44 7888 183145</a></p>
         </section>
-
     </article>
-
-
 
 
     <footer>
@@ -126,7 +156,13 @@
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
+
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 </body>
 </html>

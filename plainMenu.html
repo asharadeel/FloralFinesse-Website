@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse: Menu</title>
+    <meta name="description" content="Bouquets, wrapping, add-ons and prices from Floral Finesse by Zara.">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="stylesheet" href="CSS FILES/detailedmenu.css">
     <script src="JS FILES/general.js" defer></script>
-    <script src="JS FILES/imageView.js" defer></script>
+    <script src="JS FILES/effects.js" defer></script>
 </head>
 <body>
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -31,8 +34,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -47,77 +56,57 @@
     </nav>
 
 
-    <header>
-        <h1> Menu </h1>
+    <header class="pageHeader">
+        <p class="eyebrow">Collection &amp; Pricing</p>
+        <h1>Menu</h1>
+        <div class="divider"><span></span></div>
     </header>
 
 
-    
-    <!-- Fullscreen overlay (hidden by default) -->
-    <div class="fullscreen-overlay" id="fullscreenOverlay">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <img class="fullscreen-image" id="fullscreenImage">
-    </div>
-
+    <section id="itemTypeMenu" class="itemTypeMenu">
+        <a id="bouquetButton" href="#bouquets" class="itemTypeButton">Bouquets</a>
+        <a id="wrappingButton" href="#wrapping" class="itemTypeButton">Wrapping</a>
+        <a id="extrasButton" href="#extras" class="itemTypeButton">Extras</a>
+        <a id="othersButton" href="#others" class="itemTypeButton">Others</a>
+    </section>
 
 
     <div id="menuList">
-        <section id="itemTypeMenu" class = "itemTypeMenu animated-rainbow-border">
-            <a id="bouquetButton" href="#bouquets" class="itemTypeButton">Bouquets</a>
-            <a id="wrappingButton" href="#wrapping" class="itemTypeButton">Wrapping</a>
-            <a id="extrasButton" href="#extras" class="itemTypeButton">Extras</a>
-            <a id="othersButton" href="#others" class="itemTypeButton">Others</a>
-        </section>
-
 
         <section id="bouquets" class="itemSection">
-            <h1>Bouquets</h1>
-
-            <!--
-            <div class="itemCard">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-            </div>
-            -->
+            <h2>Bouquets</h2>
+            <div class="divider sectionRule"><span></span></div>
 
             <div class="itemCard">
-                <h3>XS - 7 Roses</h3>
+                <h3>XS &mdash; 7 Roses</h3>
                 <p class="priceText">£8</p>
             </div>
 
             <div class="itemCard">
-                <h3>S - 15 Roses</h3>
-                <p class="priceText">$25</p>
+                <h3>S &mdash; 15 Roses</h3>
+                <p class="priceText">£25</p>
             </div>
 
             <div class="itemCard">
-                <h3>M - 25 Roses</h3>
+                <h3>M &mdash; 25 Roses</h3>
                 <p class="priceText">£35</p>
             </div>
 
             <div class="itemCard">
-                <h3>L - 50 Roses</h3>
+                <h3>L &mdash; 50 Roses</h3>
                 <p class="priceText">£65</p>
             </div>
 
             <div class="itemCard">
-                <h3>XL - 100 Roses</h3>
+                <h3>XL &mdash; 100 Roses</h3>
                 <p class="priceText">£110</p>
             </div>
-
         </section>
 
-        <section id="wrapping" class="itemSection">
-            <h1>Wrapping</h1>
 
-            <!--
-            <div class="itemCard">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-            </div>
-            -->
+        <section id="wrapping" class="itemSection">
+            <h2>Wrapping</h2>
+            <div class="divider sectionRule"><span></span></div>
 
             <div class="itemCard">
                 <h3>Paper</h3>
@@ -133,19 +122,12 @@
                 <h3>LED Lace</h3>
                 <p class="priceText">£7</p>
             </div>
-
         </section>
 
-        <section id="extras" class="itemSection">
-            <h1>Extra Add Ons</h1>
 
-            <!--
-            <div class="itemCard">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-            </div>
-            -->
+        <section id="extras" class="itemSection">
+            <h2>Extra Add Ons</h2>
+            <div class="divider sectionRule"><span></span></div>
 
             <div class="itemCard">
                 <h3>Glitter</h3>
@@ -163,7 +145,7 @@
             </div>
 
             <div class="itemCard">
-                <h3>Baby Bretah Number/Initial (1pc)</h3>
+                <h3>Baby Breath Number/Initial (1pc)</h3>
                 <p class="priceText">£3*</p>
             </div>
 
@@ -178,13 +160,13 @@
             </div>
 
             <div class="itemCard">
-                <h3>Envelope - Money or Message</h3>
+                <h3>Envelope &mdash; Money or Message</h3>
                 <p class="priceText">£1*</p>
             </div>
 
             <div class="itemCard">
                 <h3>Gold/Silver Crown [S/M/L]</h3>
-                <p class="priceText">£4/£7/£12</p>
+                <p class="priceText">£4 / £7 / £12</p>
             </div>
 
             <div class="itemCard">
@@ -194,22 +176,14 @@
 
             <div class="itemCard">
                 <h3>Heart Balloon [S/M/L]</h3>
-                <p class="priceText">£4/£6/£8</p>
+                <p class="priceText">£4 / £6 / £8</p>
             </div>
-          
-
         </section>
 
-        <section id="others" class="itemSection">
-            <h1>Other Products</h1>
 
-            <!--
-            <div class="itemCard">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-                <img class="clickable-image" src="PRODUCTIMGS/brownie1.png" alt="Chocolate Cake">
-            </div>
-            -->
+        <section id="others" class="itemSection">
+            <h2>Other Products</h2>
+            <div class="divider sectionRule"><span></span></div>
 
             <div class="itemCard">
                 <h3>Forever Box (White/Black/Pink)</h3>
@@ -228,18 +202,27 @@
 
             <div class="itemCard">
                 <h3>Chocolate Bouquets</h3>
-                <p class="priceText">Enquire for Price</p>
+                <p class="priceText">Enquire</p>
             </div>
 
             <div class="itemCard">
                 <h3>Gift Bouquets</h3>
-                <p class="priceText">Enquire for Price</p>
+                <p class="priceText">Enquire</p>
             </div>
-
         </section>
 
+    </div>
 
-    <h4 class="customNote"><br>* Enquire for Price</h4>
+
+    <p class="customNote">* Enquire for Price</p>
+
+
+    <section class="links reveal">
+        <p class="eyebrow">Ready When You Are</p>
+        <h2>Place an Order</h2>
+        <div class="divider"><span></span></div>
+        <a href="order.html" class="btn">How to Order</a>
+    </section>
 
 
     <footer>
@@ -250,7 +233,13 @@
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
+
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 </body>
 </html>

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse: Reviews</title>
+    <meta name="description" content="What customers say about Floral Finesse by Zara.">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="stylesheet" href="CSS FILES/reviews.css">
     <script src="JS FILES/general.js" defer></script>
+    <script src="JS FILES/effects.js" defer></script>
 </head>
 <body>
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -30,8 +34,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -46,48 +56,59 @@
     </nav>
 
 
+    <header class="pageHeader">
+        <p class="eyebrow">In Their Words</p>
+        <h1>Reviews</h1>
+        <div class="divider"><span></span></div>
+    </header>
 
-    <h1> Reviews </h1>
 
-     <article class="pledge">
-        <img class="pledgeImage" src="IMGFILES/logotransp.png" alt="Pledge Image">
-        <h2> Pledge</h2>
-        <p class="pledgeText"> Always ensuring the highest quality of flowers. Give them their flowers while they're still here</p>
-        <a href="order.html" >Order Now</a>
-
+    <article class="pledge reveal">
+        <img class="pledgeImage" src="IMGFILES/logotransp.png" alt="Floral Finesse">
+        <p class="eyebrow">Our Pledge</p>
+        <h2>Pledge</h2>
+        <div class="divider"><span></span></div>
+        <p class="pledgeText">Always ensuring the highest quality of flowers. Give them their flowers while they're still here.</p>
+        <a href="order.html" class="btn">Order Now</a>
     </article>
+
 
     <article class="reviews">
 
-        <section class="reviewCard">
+        <section class="reviewCard reveal">
             <p class="reviewText">hi!!! just letting you know i am so beyond happy w these glitter flowers
             they are so beautiful and i love them so much and the quality is insane
             they were ready for me to collect so quickly and prices were amazing
             had such a great experience buying from u and will def be recommending
-            thank u so much!! 💗💗</p>
+            thank u so much!!</p>
+            <p class="mark">Customer Review</p>
         </section>
-        
-        <section class="reviewCard">
+
+        <section class="reviewCard reveal">
             <p class="reviewText">hello, the flowers were absolutely amazing. They came exactly how they look on the page if not even better. I had zero problems, it was smooth and efficient. Definitely will be purchasing again and 100% do recommend. Delivery was great with flowers in perfect condition. My mum loved them so overall a success.</p>
+            <p class="mark">Customer Review</p>
         </section>
 
-        <section class="reviewCard">
-            <p class="reviewText">Hey Zara just wanted to say thank you so much once again for the flowers. They’re really beautiful! 💗
-The flowers were really pretty. Despite it being on short notice you managed to prepare and get the flowers delivered really quickly, which I really appreciate.</p>
+        <section class="reviewCard reveal">
+            <p class="reviewText">Hey Zara just wanted to say thank you so much once again for the flowers. They're really beautiful!
+            The flowers were really pretty. Despite it being on short notice you managed to prepare and get the flowers delivered really quickly, which I really appreciate.</p>
+            <p class="mark">Customer Review</p>
         </section>
 
-        <section class="reviewCard">
-            <p class="reviewText">I loved the flowers so much and my girlfriend appreciated it so much. From the aesthetic down to how it smelt was perfect. I’ll defo come back to you for more flowers. Also the customer service was great and you replied very quickly. I already recommended you to my brother 😂</p>
+        <section class="reviewCard reveal">
+            <p class="reviewText">I loved the flowers so much and my girlfriend appreciated it so much. From the aesthetic down to how it smelt was perfect. I'll defo come back to you for more flowers. Also the customer service was great and you replied very quickly. I already recommended you to my brother.</p>
+            <p class="mark">Customer Review</p>
         </section>
 
-        <section class="reviewCard">
-            <p class="reviewText">will most definitely be ordering from you again in the next few months in shaa Allah 💗
-I have sent the final payment as well, jzkAllah khair may Allah bless you in your earnings xx</p>
+        <section class="reviewCard reveal">
+            <p class="reviewText">will most definitely be ordering from you again in the next few months in shaa Allah.
+            I have sent the final payment as well, jzkAllah khair may Allah bless you in your earnings xx</p>
+            <p class="mark">Customer Review</p>
         </section>
 
     </article>
 
-   
+
     <footer>
         <p>Floral Finesse by Zara</p>
         <p>Contact me via Instagram to place Orders</p>
@@ -96,7 +117,13 @@ I have sent the final payment as well, jzkAllah khair may Allah bless you in you
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
+
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 </body>
 </html>

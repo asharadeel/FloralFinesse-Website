@@ -1,252 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Protest+Strike&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-
-
-header{
-    h1{
-        border: 0px;
-        background: linear-gradient(rgba(96, 33, 33, 0.5), rgba(48, 24, 24, 0.9)) !important;
-        background-size: 20%;
-        margin: 0em 0em 1em 0em;
-        padding: 1em;
-    }
+/* clears both the nav and the category bar when jumping to a section */
+html{
+    scroll-padding-top: 9em;
 }
 
+/* CATEGORY BAR - sticks under the nav, scrolls sideways on small screens */
 .itemTypeMenu{
-    z-index: 50;
-    position: fixed;
-    bottom: 1em;
-    width: 45%;
-    left: 27.5%;
-    right: 27.5%;
-    height: 10rem;
-    background-color: rgb(37, 37, 37);
-
+    position: sticky;
+    top: var(--nav);
+    z-index: 60;
     display: flex;
-    align-items: center;
     flex-direction: row;
-    overflow-x: auto;     
-    overflow-y: hidden;    
-    gap: 1em;
-    padding: 1em 0em;
-    text-align: center;
-    border-radius: 4em;
-    box-shadow: 5px 5px 8px rgba(0,0,0,0.6);
-    
-    a{
-        height: 8em;
-        width: 8em;
-        background-size: 100%;
-        border-radius: 10rem;
-        box-shadow: 0.5rem 0.5rem 1rem  rgba(255, 0, 0, 0.2);
-        color: white;
-    }
-    
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    padding: 1em 1.5em;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.itemTypeMenu::-webkit-scrollbar{
+    display: none;
 }
 
 .itemTypeButton{
-    flex: 0 0 auto;        /* Prevent shrinking/growing, keep fixed width */
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
-    width: 10em;
-    height: 10em;
-    margin: 0em 2em;
-    
+    min-height: 2.8em;
+    padding: 0.8em 1.6em;
+    font-size: 0.7em;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    transition: all 0.4s var(--ease);
 }
 
+.itemTypeButton:hover, .itemTypeButton.active{
+    color: var(--gold);
+    border-color: var(--lineGold);
+    background: var(--surface2);
+}
+
+
+/* MENU SECTIONS */
 #menuList{
-    margin: 0em 0em 1em 0em;
+    max-width: 52em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4em 2.5em 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5em;
 }
 
-h3{
-    font-size: 2rem;
+.itemSection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.itemSection h2{
+    padding: 0em 0em 1.2em 0em;
+    text-align: center;
+    font-size: clamp(1.5em, 4vw, 2.2em);
+}
+
+.itemSection .sectionRule{
+    margin-bottom: 1.5em;
+}
+
+
+/* PRICE ROWS */
+.itemCard{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 1.3em 0.5em;
+    border-bottom: 1px solid var(--line);
+    transition: all 0.35s var(--ease);
+}
+
+.itemCard:hover{
+    background: var(--surface);
+    padding-left: 1em;
+}
+
+.itemCard h3{
+    font-size: 1.05em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: var(--text);
 }
 
 .priceText{
-    font-family: 'PT Serif Caption', serif;
-    color: white;
+    flex-shrink: 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.05em;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+    white-space: nowrap;
 }
-
-.descriptionText{
-    padding: 1em 0em; 
-}
-
-h1{
-    padding: 1em 0em;
-    margin: 1em 0.5em 0em 0.5em;
-}
-
 
 .customNote{
-    color: rgb(247, 152, 152);
-    font-size:  1em;
-    padding: 1em;
+    padding: 2em 2.5em 4em 2.5em;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 0.75em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
 }
-
-.itemCard{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 1em;
-    margin: 0em; 
-    gap: 1em;
-    img{
-        flex: 1;
-        max-width: 100%;
-        height: 20vh;
-        border-radius: 10px;
-        box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-        object-fit:cover;
-
-        display: block;
-        
-    }
-
-}
-
-h2{
-    font-size: 3rem;
-}
-
-.briefMenu{
-    margin: 1em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0em 2em 0em 2em; 
-    a{
-        background-color: rgba(0,0,0,0.1);
-        border-radius: 10px;
-    }
-    a:hover{
-        background-color: rgba(0,0,0,0.8);
-        color: white;
-        border-radius: 50%;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    }
-}
-
-
-
-
-
-/*BUTTONS*/
-#bouquetButton{
-    font-family: "Fjalla One", sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/boquetIcon.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#wrappingButton{
-    font-family: "Fjalla One", sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/wrappingIcon.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#extrasButton{
-    font-family: "Fjalla One", sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/extraIcon.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#othersButton{
-    font-family: "Fjalla One", sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/othersIcon.gif);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 
 
 @media (max-width: 768px) {
-    header{
-        h1{
-            border: 0px;
-        background: linear-gradient(rgba(96, 33, 33, 0.5), rgba(48, 24, 24, 0.9)), url(../GIFFILES/mvoing\ roses.gif) !important;
-            background-size: 100%;
-            margin: 0em;
-            padding: 2em;
-            box-shadow: 0.5rem 0px 1rem  rgba(0,0,0,0.5);
-        }
-    }
-
-    h1{
-        font-size: 3em;
-        margin: 0em 0em 1em 0em;
-        padding-bottom: 1em;
-
-        background: linear-gradient(rgba(86, 46, 46, 0.5), rgba(0, 0, 0, 0.9)), url(../GIFFILES/roseRain.gif) !important;
-    }
-
-    h2{
-        border-top: 3px solid rgba(0,0,0,0.2);
-        font-size: 3em;
-        padding: 0.5em;    
-    }
-
     .itemTypeMenu{
-        height: 10em;
-        width: 50%;
-        left: 25%;
-        right: 25%;
-        margin: 0.2em;
-        bottom: 2em; 
-        border-radius: 2em;
+        justify-content: flex-start;
+        gap: 0.5em;
+        padding: 0.9em 1em;
     }
 
     .itemTypeButton{
-        height: 6rem;
-        width: 6rem;
+        padding: 0.8em 1.3em;
+        font-size: 0.66em;
     }
-    
+
+    #menuList{
+        padding: 2.5em 1.4em 1em 1.4em;
+        gap: 3em;
+    }
+
+    .itemSection h2{
+        padding-bottom: 1em;
+    }
+
     .itemCard{
-        display: flex;
-        flex-direction: column;
-        padding: 0.5em;
+        gap: 1em;
+        padding: 1.15em 0em;
+    }
+
+    .itemCard:hover{
+        padding-left: 0em;
+        background: transparent;
+    }
+
+    .itemCard h3{
+        font-size: 0.95em;
         text-align: left;
-        h3{
-            text-align: center;
-            padding: 0.5em 0em 0em 0em;
-        }
-
-        img{
-            max-height: 5em;
-            width: 90%;
-            object-fit: cover;
-        }
     }
 
-    .briefMenu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0em 2em 2em 2em; 
-    a{
-        background-color: rgba(0,0,0,0.1);
-        border-radius: 10px;
+    .priceText{
+        font-size: 1em;
     }
-    a:hover{
-        background-color: rgba(0,0,0,0.8);
-        color: white;
-        border-radius: 50%;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+    .customNote{
+        padding: 1.5em 1.4em 3em 1.4em;
     }
 }
-
-
-}
-

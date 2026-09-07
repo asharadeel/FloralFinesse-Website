@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse: About</title>
+    <meta name="description" content="The story behind Floral Finesse by Zara - handcrafted everlasting rose bouquets.">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="stylesheet" href="CSS FILES/about.css">
 
     <script src="JS FILES/general.js" defer></script>
+    <script src="JS FILES/effects.js" defer></script>
 </head>
 <body>
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -31,8 +35,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -47,42 +57,57 @@
     </nav>
 
 
+    <header class="pageHeader">
+        <p class="eyebrow">Our Story</p>
+        <h1>About Me</h1>
+        <div class="divider"><span></span></div>
+    </header>
 
-    <h1>About Me</h1>
 
-    <article class="about-me">
-        <div>
-            <img id="aboutImg" src="IMGFILES/logotransp.png">
+    <article class="about-me reveal">
+        <div class="portrait">
+            <img id="aboutImg" src="IMGFILES/logotransp.png" alt="Floral Finesse by Zara">
         </div>
-        <div>
+        <div class="story">
+            <p class="eyebrow">Founded February 2024</p>
+            <div class="divider"><span></span></div>
             <p>
                 I launched my business in February of 2024 at 17 years old. It started as an idea and 2 days later i made it a reality. I knew the idea was put into my head for a reason. Roses have now developed a much deeper meaning for me, one I would have never anticipated.
-                <br><br>
-                It brings me so much pleasure to help my customers in selecting the perfect bouquet. I take pride in helping people express emotions that words may not be able to capture, as somebody whose not the best with wording how I feel. There's something truly special about witnessing the warmth and happiness that arises when someone receives a timeless symbol of love and appreciation. 
+            </p>
+            <p>
+                It brings me so much pleasure to help my customers in selecting the perfect bouquet. I take pride in helping people express emotions that words may not be able to capture, as somebody whose not the best with wording how I feel. There's something truly special about witnessing the warmth and happiness that arises when someone receives a timeless symbol of love and appreciation.
             </p>
         </div>
     </article>
 
-  
 
-    <article class="links">
-        <h2> Contact Me </h2>
+    <section class="signature reveal">
+        <p class="quote">give them their flowers while they're still here</p>
+        <div class="divider"><span></span></div>
+        <a href="order.html" class="btn">Place an Order</a>
+    </section>
+
+
+    <article class="links reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Contact Me</h2>
+        <div class="divider"><span></span></div>
+
         <section class="socialCard">
             <img class="socialIcon" src="IMGFILES/instagramIcon.png" alt="Instagram Icon">
             <p><a href="https://www.instagram.com/floralfinessebyzara/">@floralfinessebyzara</a></p>
         </section>
 
         <section class="socialCard">
-            <img class="socialIcon" src="IMGFILES/tkiktokIcon.png" alt="Instagram Icon">
+            <img class="socialIcon" src="IMGFILES/tkiktokIcon.png" alt="TikTok Icon">
             <p><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">@floralfinessebyzara</a></p>
         </section>
 
         <section class="socialCard">
             <img class="socialIcon" src="IMGFILES/phoneIcon.png" alt="Phone Icon">
-            <p><a href="tel:+447888183145">Text at +447888183145</a></p>
+            <p><a href="tel:+447888183145">+44 7888 183145</a></p>
         </section>
     </article>
-
 
 
     <footer>
@@ -93,7 +118,13 @@
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
+
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 </body>
 </html>

@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Floral Finesse</title>
+    <meta name="description" content="Floral Finesse by Zara - handcrafted everlasting rose bouquets, made to order in South East London.">
+    <meta name="theme-color" content="#000000">
     <link rel="stylesheet" href="CSS FILES/reset.css">
     <link rel="stylesheet" href="CSS FILES/general.css">
     <link rel="stylesheet" href="CSS FILES/homepage.css">
     <link rel="icon" type="image/x-icon" href="IMGFILES/icon.ico">
     <script src="JS FILES/general.js" defer></script>
-    <script src="JS FILES/imageAnim.js" defer></script>
+    <script src="JS FILES/effects.js" defer></script>
     <script src="JS FILES/loader.js" defer></script>
 </head>
 <body>
     <div id="loader">
         <img src="IMGFILES/logotransp.png" alt="Logo" class="loader-logo">
+        <div class="loader-line"><span></span></div>
     </div>
 
 
     <div id="top"></div>
-    <nav class="desktopNavBar"> 
-        <div>
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-        </div>
+    <nav class="desktopNavBar">
+        <a href="homepage.html" class="navBrand">
+            <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+            <span>Floral Finesse</span>
+        </a>
         <div>
             <ul>
                 <li><a href="homepage.html">Home</a></li>
@@ -38,8 +42,14 @@
 
     <nav class="mobileNavBar">
         <div class="nav-header">
-            <img class="logo" src="IMGFILES/icon.ico" alt="Logo">
-            <button id="menu-toggle"><img class="logo" src="IMGFILES/menuIcon.png"></button>
+            <a href="homepage.html" class="navBrand">
+                <img class="logo" src="IMGFILES/icon.ico" alt="Floral Finesse">
+                <span>Floral Finesse</span>
+            </a>
+            <button id="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <div class="nav-links">
             <ul>
@@ -54,75 +64,122 @@
     </nav>
 
 
-    <div class="image-rollover-container"> 
+    <header class="hero">
+        <p class="eyebrow">Est. 2024 &middot; South East London</p>
+        <img class="heroLogo" src="IMGFILES/logotransp.png" alt="Floral Finesse by Zara">
+        <h1>Floral Finesse</h1>
+        <div class="divider"><span></span></div>
+        <p class="quote">give them their flowers while they're still here</p>
+        <div class="heroActions">
+            <a href="plainMenu.html" class="btn">View the Menu</a>
+            <a href="order.html" class="btn btnGhost">Place an Order</a>
+        </div>
+        <div class="scrollHint"><span>Scroll</span></div>
+    </header>
+
+
+    <div class="image-rollover-container">
         <div class="image-rollover-track">
-            <img src="PRODUCTIMGS/1.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/2.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/3.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/4.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/5.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/6.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/7.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/1.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/2.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/3.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/4.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/5.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/6.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/7.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/1.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/2.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/3.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/4.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/5.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/6.png" alt="Gallery Image 1">
-            <img src="PRODUCTIMGS/7.png" alt="Gallery Image 1">
+            <img src="PRODUCTIMGS/1.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/2.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/3.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/4.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/5.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/6.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/7.png" alt="Rose bouquet">
+            <img src="PRODUCTIMGS/1.png" alt="">
+            <img src="PRODUCTIMGS/2.png" alt="">
+            <img src="PRODUCTIMGS/3.png" alt="">
+            <img src="PRODUCTIMGS/4.png" alt="">
+            <img src="PRODUCTIMGS/5.png" alt="">
+            <img src="PRODUCTIMGS/6.png" alt="">
+            <img src="PRODUCTIMGS/7.png" alt="">
+            <img src="PRODUCTIMGS/1.png" alt="">
+            <img src="PRODUCTIMGS/2.png" alt="">
+            <img src="PRODUCTIMGS/3.png" alt="">
+            <img src="PRODUCTIMGS/4.png" alt="">
+            <img src="PRODUCTIMGS/5.png" alt="">
+            <img src="PRODUCTIMGS/6.png" alt="">
+            <img src="PRODUCTIMGS/7.png" alt="">
         </div>
     </div>
 
-    <header class="banner">
-        <img src="IMGFILES/logotransp.png" alt="Image Banner">
-    </header>
- 
-    
+
+    <section class="statement reveal">
+        <p class="eyebrow">The House of Floral Finesse</p>
+        <h2>Flowers That Never Fade</h2>
+        <div class="divider"><span></span></div>
+        <p>
+            Every bouquet is arranged by hand, one rose at a time, for the moments that deserve
+            more than words. Made with artificial roses so your gift lasts long after the day itself.
+        </p>
+    </section>
+
+
+    <section class="values">
+        <div class="valueCard reveal">
+            <p class="index">01</p>
+            <h3>Handcrafted</h3>
+            <p>Arranged individually to order, never mass produced.</p>
+        </div>
+        <div class="valueCard reveal">
+            <p class="index">02</p>
+            <h3>Everlasting</h3>
+            <p>Artificial roses finished to keep their beauty indefinitely.</p>
+        </div>
+        <div class="valueCard reveal">
+            <p class="index">03</p>
+            <h3>Delivered</h3>
+            <p>Collection and local delivery in SE London, nationwide on request.</p>
+        </div>
+    </section>
+
+
+    <section class="directory">
+        <div class="directoryHead reveal">
+            <p class="eyebrow">Explore</p>
+            <h2>Directory</h2>
+            <div class="divider"><span></span></div>
+        </div>
+
+        <a href="plainMenu.html" class="directoryItem">
+            <p class="index">01</p>
+            <h3>Menu</h3>
+            <p class="arrow">&rarr;</p>
+        </a>
+
+        <a href="gallery.html" class="directoryItem">
+            <p class="index">02</p>
+            <h3>Gallery</h3>
+            <p class="arrow">&rarr;</p>
+        </a>
+
+        <a href="review.html" class="directoryItem">
+            <p class="index">03</p>
+            <h3>Reviews</h3>
+            <p class="arrow">&rarr;</p>
+        </a>
+
+        <a href="about.html" class="directoryItem">
+            <p class="index">04</p>
+            <h3>About Me</h3>
+            <p class="arrow">&rarr;</p>
+        </a>
+
+        <a href="order.html" class="directoryItem">
+            <p class="index">05</p>
+            <h3>Order</h3>
+            <p class="arrow">&rarr;</p>
+        </a>
+    </section>
+
+
     <section class="socials">
-        <a href = "https://www.instagram.com/floralfinessebyzara/"class = socialsButton><img src = "IMGFILES/instagramIcon.png" alt="Instagram"></a>
-        <a href = "https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw" class = socialsButton><img src = "IMGFILES/tkiktokIcon.png" alt="TikTok"></a>
-    </section>
-  
-    <section class="welcomeBox">
-        <div>
-            <h2>FLORAL FINESSE BY ZARA</h2>
-            <p class="quote">give them their flowers while they're still here</p>
-        </div>
+        <a href="https://www.instagram.com/floralfinessebyzara/" class="socialsButton" aria-label="Instagram"><img src="IMGFILES/instagramIcon.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw" class="socialsButton" aria-label="TikTok"><img src="IMGFILES/tkiktokIcon.png" alt="TikTok"></a>
+        <a href="tel:+447888183145" class="socialsButton" aria-label="Phone"><img src="IMGFILES/phoneIcon.png" alt="Phone"></a>
     </section>
 
-    <section class="redirects">
-        <div class="redirects-container">
-            <div class="redirect-title" id="homeredirect">
-                <p> Directory</p>
-            </div>
-            <div class="redirect-item" id="orderredirect">
-                <a href="order.html" class="redirect-link">Order</a>
-            </div>
-            <div class="redirect-item" id="menuredirect">
-                <a href="plainMenu.html" class="redirect-link">Menu</a>
-            </div>
-    
-            <div class="redirect-item" id="galleryredirect">
-                <a href="gallery.html" class="redirect-link">Gallery</a>
-            </div>
-
-            <div class="redirect-item" id="reviewredirect">
-                <a href="review.html" class="redirect-link">Reviews</a>
-            </div>
-
-            <div class="redirect-item" id="aboutredirect">
-                <a href="about.html" class="redirect-link">About Me</a>
-            </div>
-        </div>
-    </section>
-  
 
     <footer>
         <p>Floral Finesse by Zara</p>
@@ -132,8 +189,14 @@
             <li><a href="https://www.tiktok.com/@floralfinessebyzara?_t=8kB7d7M2yES&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAae2boc1BXBSvRuvyp2LRgmCshj5OWNowI_WlLDWxm1ctfl4ihCTgxeQsVDZVg_aem_PmHJpZPBq7eB0EO7pqwNuw">TikTok</a></li>
             <li><a href="tel:+447888183145">Phone</a></li>
         </ul>
-        <a href="https://asharadeel.github.io/index.html" class="barcode"> Website by ashar</a>
+        <a href="https://asharadeel.github.io/index.html" class="barcode">Website by ashar</a>
     </footer>
+
+
+    <div class="mobileActionBar">
+        <a href="https://www.instagram.com/floralfinessebyzara/">Order on Instagram</a>
+        <a href="tel:+447888183145">Text Zara</a>
+    </div>
 
 </body>
 </html>

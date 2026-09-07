@@ -4,32 +4,38 @@ document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.getElementById('fullscreenOverlay');
     const fullscreenImage = document.getElementById('fullscreenImage');
     const closeBtn = document.getElementById('closeBtn');
-    
+
+    if (!overlay || !fullscreenImage) return;
+
+    function closeOverlay() {
+        overlay.classList.remove('open');
+        document.body.classList.remove('noScroll');
+    }
+
     // Add click event to each image
     images.forEach(img => {
         img.addEventListener('click', function() {
             fullscreenImage.src = this.src;
             fullscreenImage.alt = this.alt;
-            overlay.style.display = 'block';
+            overlay.classList.add('open');
+            document.body.classList.add('noScroll');
         });
     });
-    
+
     // Close the overlay
-    closeBtn.addEventListener('click', function() {
-        overlay.style.display = 'none';
-    });
-    
+    if (closeBtn) closeBtn.addEventListener('click', closeOverlay);
+
     // Also close when clicking outside the image
     overlay.addEventListener('click', function(e) {
         if (e.target === overlay) {
-            overlay.style.display = 'none';
+            closeOverlay();
         }
     });
-    
+
     // Close with ESC key
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && overlay.style.display === 'block') {
-            overlay.style.display = 'none';
+        if (e.key === 'Escape') {
+            closeOverlay();
         }
     });
 });

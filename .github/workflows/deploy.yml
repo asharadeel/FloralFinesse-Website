@@ -1,0 +1,18 @@
+name: Deploy to Neocities
+on:
+  push:
+    branches: [main]
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # add a build step here if you use a static site generator
+      - uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          cleanup: false        # true = delete files on Neocities not in your repo
+          dist_dir: public      # folder to upload; "." for a plain HTML repo
