@@ -13,7 +13,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # the site lives in the repo root, but we must not upload the root itself
       # (.git / .github are not valid Neocities files) - so copy the real site
@@ -36,5 +36,6 @@ jobs:
         with:
           api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
           dist_dir: public
-          cleanup: false            # true = delete files on Neocities not in your repo
+          cleanup: true             # deletes files on Neocities that are not in the repo
+
           preview_before_deploy: true
