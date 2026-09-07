@@ -31,14 +31,15 @@
     padding-top: 1em;
 }
 
+/* span the full width and centre the line inside it - the old
+   left/translateX trick relied on the box shrinking to fit its text */
 .scrollHint{
     position: absolute;
     bottom: 2em;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
 .scrollHint::after{
