@@ -1,18 +1,40 @@
 name: Deploy to Neocities
+
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
 concurrency:
   group: deploy-to-neocities
   cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # add a build step here if you use a static site generator
+
+      # the site lives in the repo root, but we must not upload the root itself
+      # (.git / .github are not valid Neocities files) - so copy the real site
+      # into public/ and upload only that
+      - name: Stage site files
+        run: |
+          mkdir -p public
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude 'public' \
+            --exclude 'archived pages' \
+            --exclude 'README.md' \
+            --exclude 'LICENSE' \
+            ./ public/
+          echo "Files to upload:"
+          find public -type f | sort
+
       - uses: bcomnes/deploy-to-neocities@v3
         with:
-          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-          cleanup: false        # true = delete files on Neocities not in your repo
-          dist_dir: public      # folder to upload; "." for a plain HTML repo
+          api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
+          dist_dir: public
+          cleanup: false            # true = delete files on Neocities not in your repo
+          preview_before_deploy: true
