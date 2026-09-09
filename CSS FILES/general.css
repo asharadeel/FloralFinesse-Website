@@ -22,9 +22,11 @@ font-family: "Great Vibes", cursive;
     --surface: #0a0a0a;
     --surface2: #121212;
     --line: rgba(255, 255, 255, 0.09);
-    --lineGold: rgba(197, 165, 114, 0.3);
-    --gold: #c5a572;
-    --goldLight: #e2cfa8;
+
+    /* brand gold, sampled from the size graphics and the FF emblem */
+    --lineGold: rgba(175, 161, 79, 0.35);
+    --gold: #afa14f;
+    --goldLight: #cfc180;
     --text: #f3f1ec;
     --muted: #918b81;
 
@@ -574,13 +576,11 @@ footer ul li a:hover{
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border: 1px solid var(--line);
-    filter: brightness(0.92);
     transition: all 0.6s var(--ease);
 }
 
 .image-row-2 img:hover, .image-row-3 img:hover, .image-row-4 img:hover{
-    border-color: var(--lineGold);
-    filter: brightness(1.05);
+    border-color: var(--gold);
     transform: translateY(-0.3em);
 }
 
