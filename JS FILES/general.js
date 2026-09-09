@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('active');
-            document.body.classList.toggle('noScroll');
+            const open = navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active', open);
+            document.body.classList.toggle('noScroll', open);
+            hamburger.setAttribute('aria-expanded', open);
         });
 
         // close the drawer when a link is picked
@@ -17,7 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 navLinks.classList.remove('active');
                 hamburger.classList.remove('active');
                 document.body.classList.remove('noScroll');
+                hamburger.setAttribute('aria-expanded', false);
             });
+        });
+
+        // and on escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                hamburger.click();
+            }
         });
     }
 
@@ -45,6 +54,28 @@ topButton.appendChild(arrowImg);
 
 document.body.appendChild(topButton);
 
+
+// SCROLL PROGRESS BAR
+const progress = document.createElement('div');
+progress.className = 'scrollProgress';
+document.body.appendChild(progress);
+
+
+// one scroll handler for everything, throttled to the frame
+let ticking = false;
+
 window.addEventListener('scroll', () => {
-    topButton.classList.toggle('visible', window.scrollY > 400);
+    if (ticking) return;
+    ticking = true;
+
+    requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+
+        topButton.classList.toggle('visible', y > 400);
+        document.body.classList.toggle('scrolled', y > 20);
+        progress.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+
+        ticking = false;
+    });
 });
