@@ -31,6 +31,7 @@ font-family: "Great Vibes", cursive;
     --muted: #918b81;
 
     --nav: 4.5em;
+    --side: 15em;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -1037,6 +1038,126 @@ footer ul li a:hover{
 
     .fullscreen-overlay{
         padding: 1em;
+    }
+}
+
+
+/* SIDE NAVIGATION - desktop only, on every page except the homepage.
+   Add class="sideNav" to <body> to switch a page over. */
+@media (min-width: 769px) {
+    body.sideNav{
+        padding-left: var(--side);
+    }
+
+    body.sideNav .desktopNavBar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--side);
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 3.5em;
+        padding: 3.5em 2.2em;
+        background: var(--surface);
+        border-right: 1px solid var(--line);
+        border-bottom: none;
+
+        /* short viewports scroll the column rather than clipping it */
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+
+    body.sideNav .desktopNavBar::-webkit-scrollbar{
+        display: none;
+    }
+
+    /* the scrolled drop shadow is for the top bar, not a full height column */
+    body.sideNav.scrolled .desktopNavBar{
+        box-shadow: none;
+    }
+
+    /* stacked brand mark */
+    body.sideNav .desktopNavBar .navBrand{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.3em;
+    }
+
+    body.sideNav .desktopNavBar .navBrand span{
+        font-size: 0.8em;
+        line-height: 1.9;
+    }
+
+    body.sideNav .desktopNavBar .logo{
+        width: 3.2em;
+        height: 3.2em;
+    }
+
+    /* vertical link list */
+    body.sideNav .desktopNavBar ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5em;
+        width: 100%;
+    }
+
+    body.sideNav .desktopNavBar ul li{
+        width: 100%;
+    }
+
+    body.sideNav .desktopNavBar ul li a{
+        font-size: 0.74em;
+        letter-spacing: 0.22em;
+    }
+
+    /* underline grows from the left rather than the centre */
+    body.sideNav .desktopNavBar ul li a::after{
+        left: 0;
+        transform: none;
+    }
+
+    /* signature sits at the foot of the column */
+    body.sideNav .desktopNavBar::after{
+        content: "Give them their flowers while they're still here";
+        margin-top: auto;
+        font-family: "Great Vibes", cursive, Georgia, serif;
+        font-size: 1.15em;
+        line-height: 1.6;
+        color: var(--gold);
+        opacity: 0.75;
+    }
+
+    /* page headings read better ranged left beside a column */
+    body.sideNav .pageHeader{
+        align-items: flex-start;
+        text-align: left;
+        padding: 6em 3.5em 3.5em 3.5em;
+    }
+
+    body.sideNav .pageHeader .divider{
+        margin: 0;
+    }
+
+    /* no top bar to clear, so the menu's category rail sits at the top */
+    body.sideNav .itemTypeMenu{
+        top: 0;
+        justify-content: flex-start;
+        padding-left: 3.5em;
+    }
+}
+
+
+/* the column eats 15em, so drop a track on mid size screens */
+@media (min-width: 769px) and (max-width: 1200px) {
+    body.sideNav .reviews{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body.sideNav .image-row-4{
+        grid-template-columns: 1fr 1fr;
     }
 }
 

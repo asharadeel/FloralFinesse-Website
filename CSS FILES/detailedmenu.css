@@ -3,6 +3,13 @@ html{
     scroll-padding-top: 9em;
 }
 
+/* with the side nav there is no top bar, so only the rail needs clearing */
+@media (min-width: 769px) {
+    html{
+        scroll-padding-top: 5.5em;
+    }
+}
+
 /* CATEGORY BAR - sticks under the nav, scrolls sideways on small screens */
 .itemTypeMenu{
     position: sticky;
