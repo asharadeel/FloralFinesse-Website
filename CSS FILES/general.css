@@ -403,6 +403,81 @@ footer ul li a:hover{
 }
 
 
+/* CREDIT POPUP - opens from the "Website by ashar" link in the footer */
+.creditModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s var(--ease), visibility 0.4s var(--ease);
+}
+
+.creditModal.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.creditCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3em;
+    width: 100%;
+    max-width: 26em;
+    padding: 3em 2.5em 2.5em 2.5em;
+    text-align: center;
+    background: var(--surface2);
+    border: 1px solid var(--lineGold);
+    transform: translateY(1.5em) scale(0.97);
+    transition: transform 0.45s var(--ease);
+}
+
+.creditModal.open .creditCard{
+    transform: none;
+}
+
+.creditCard h3{
+    font-size: 1.5em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.creditCard p:not(.eyebrow){
+    color: var(--muted);
+    font-size: 0.95em;
+    line-height: 1.9;
+}
+
+.creditClose{
+    position: absolute;
+    top: 0.4em;
+    right: 0.6em;
+    padding: 0.3em;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 1;
+    color: var(--muted);
+    background: transparent;
+    border: none;
+    transition: color 0.3s var(--ease);
+}
+
+.creditClose:hover{
+    color: var(--gold);
+}
+
+
 /* MOBILE ACTION BAR */
 .mobileActionBar{
     display: none;
@@ -476,6 +551,23 @@ footer ul li a:hover{
     background: linear-gradient(90deg, var(--gold), var(--goldLight));
     pointer-events: none;
     transition: width 0.1s linear;
+}
+
+
+/* SCROLL DRIVEN - native, runs off the main thread. Browsers without it
+   keep the javascript versions below, so nothing is lost. */
+@supports (animation-timeline: scroll()) {
+    /* the progress line tracks the scrollbar itself, no scroll handler */
+    .scrollProgress{
+        animation: progressGrow linear both;
+        animation-timeline: scroll(root block);
+        transition: none;
+    }
+
+    @keyframes progressGrow{
+        from { width: 0%; }
+        to { width: 100%; }
+    }
 }
 
 

@@ -41,6 +41,54 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// CREDIT POPUP - built here so it exists on every page without pasting
+// the same markup into seven files
+document.addEventListener('DOMContentLoaded', function() {
+    const credit = document.querySelector('.barcode');
+    if (!credit) return;
+
+    const modal = document.createElement('div');
+    modal.className = 'creditModal';
+    modal.innerHTML =
+        '<div class="creditCard">' +
+            '<button class="creditClose" aria-label="Close">&times;</button>' +
+            '<p class="eyebrow">Website by Ashar</p>' +
+            '<h3>Like What You See?</h3>' +
+            '<div class="divider"><span></span></div>' +
+            '<p>This site was designed and built by Ashar. If you like it and ' +
+            'want something similar for your own business, take a look at my work.</p>' +
+            '<a href="' + credit.href + '" class="btn" target="_blank" rel="noopener">View My Work</a>' +
+        '</div>';
+
+    document.body.appendChild(modal);
+
+    function close() {
+        modal.classList.remove('open');
+        document.body.classList.remove('noScroll');
+    }
+
+    // the link still works without javascript, so only take it over now
+    credit.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.classList.add('open');
+        document.body.classList.add('noScroll');
+    });
+
+    modal.querySelector('.creditClose').addEventListener('click', close);
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) close();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') close();
+    });
+
+    // going to the site should not leave the popup sitting open behind it
+    modal.querySelector('.btn').addEventListener('click', close);
+});
+
+
 // Create button SCROLL TO TOP
 const topButton = document.createElement('a');
 topButton.href = '#top';

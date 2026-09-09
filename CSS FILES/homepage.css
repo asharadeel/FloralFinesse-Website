@@ -30,6 +30,20 @@
     to { opacity: 1; transform: none; }
 }
 
+/* the hero recedes as you scroll past it - scroll driven, so it tracks
+   the scroll position exactly rather than easing on a timer */
+@supports (animation-timeline: scroll()) {
+    .hero{
+        animation: heroRecede linear both;
+        animation-timeline: scroll(root block);
+        animation-range: 0 85vh;
+    }
+
+    @keyframes heroRecede{
+        to { opacity: 0.2; transform: translateY(-2.5em); }
+    }
+}
+
 .heroLogo{
     width: 9em;
     height: auto;
