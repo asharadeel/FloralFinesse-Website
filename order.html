@@ -12,6 +12,7 @@
 
     <script src="JS FILES/general.js" defer></script>
     <script src="JS FILES/effects.js" defer></script>
+    <script src="JS FILES/form.js" defer></script>
 </head>
 <body class="sideNav">
     <div id="top"></div>
@@ -123,6 +124,60 @@
                 As a thank you for continued support, returning customers will receive 35% off their 5th order.
             </p>
         </div>
+    </section>
+
+
+    <!--
+        ENQUIRY FORM
+        Needs a free access key before it will send. Go to web3forms.com,
+        enter the email address the messages should arrive at, and paste
+        the key it gives you into the access_key field below.
+        Until then the form disables itself and points people to Instagram.
+    -->
+    <section class="enquiry">
+        <div class="enquiryHead reveal">
+            <p class="eyebrow">Or Send a Message</p>
+            <h2>Enquire</h2>
+            <div class="divider"><span></span></div>
+            <p>Would rather not message on social media? Leave your details here and I'll come back to you.</p>
+        </div>
+
+        <form class="enquiryForm reveal" id="enquiryForm" novalidate>
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New enquiry from the Floral Finesse website">
+            <input type="hidden" name="from_name" value="Floral Finesse Website">
+
+            <!-- honeypot - people never see it, bots fill it in -->
+            <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1">
+
+            <label class="field">
+                <span>Name <em>*</em></span>
+                <input type="text" name="name" autocomplete="name" placeholder="Your name">
+            </label>
+
+            <div class="fieldRow">
+                <label class="field">
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+                </label>
+
+                <label class="field">
+                    <span>Phone</span>
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="07000 000000">
+                </label>
+            </div>
+
+            <label class="field">
+                <span>Your Enquiry <em>*</em></span>
+                <textarea name="message" rows="5" placeholder="Number of roses, colours, wrapping, ribbon, any add-ons, and the date you need it for"></textarea>
+            </label>
+
+            <p class="formHint">Please leave either an email or a phone number so I can reply.</p>
+
+            <button type="submit" class="btn">Send Enquiry</button>
+
+            <p class="formStatus" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
     </section>
 
 
