@@ -968,8 +968,10 @@ footer ul li a:hover{
     letter-spacing: 0.04em;
 }
 
-.enquiryForm .btn{
-    align-self: flex-start;
+.formActions{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
 
 .formStatus{
@@ -1255,8 +1257,12 @@ footer ul li a:hover{
         gap: 1.2em;
     }
 
-    .enquiryForm .btn{
-        align-self: stretch;
+    .formActions{
+        flex-direction: column;
+        gap: 0.7em;
+    }
+
+    .formActions .btn{
         padding: 1.2em 1em;
     }
 

@@ -129,17 +129,19 @@
 
     <!--
         ENQUIRY FORM
-        Needs a free access key before it will send. Go to web3forms.com,
-        enter the email address the messages should arrive at, and paste
-        the key it gives you into the access_key field below.
-        Until then the form disables itself and points people to Instagram.
+        Neocities sends "form-action 'self'" and "connect-src 'self'" in its
+        CSP, so a free account cannot post this form to web3forms or any other
+        service. Instead form.js formats the answers into a prefilled text
+        message to Zara. The access_key below is kept ready in case the site
+        moves to a Supporter account or other hosting, where a real background
+        post would work again.
     -->
     <section class="enquiry">
         <div class="enquiryHead reveal">
             <p class="eyebrow">Or Send a Message</p>
             <h2>Enquire</h2>
             <div class="divider"><span></span></div>
-            <p>Would rather not message on social media? Leave your details here and I'll come back to you.</p>
+            <p>Fill this in and it will open a text to me with your details ready to send, so nothing gets missed.</p>
         </div>
 
         <form class="enquiryForm reveal" id="enquiryForm" novalidate>
@@ -174,7 +176,10 @@
 
             <p class="formHint">Please leave either an email or a phone number so I can reply.</p>
 
-            <button type="submit" class="btn">Send Enquiry</button>
+            <div class="formActions">
+                <button type="submit" class="btn">Send by Text</button>
+                <button type="button" class="btn btnGhost" id="copyDetails">Copy Details</button>
+            </div>
 
             <p class="formStatus" id="formStatus" role="status" aria-live="polite"></p>
         </form>
