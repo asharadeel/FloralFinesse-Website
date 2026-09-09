@@ -12,7 +12,6 @@
 
     <script src="JS FILES/general.js" defer></script>
     <script src="JS FILES/effects.js" defer></script>
-    <script src="JS FILES/form.js" defer></script>
 </head>
 <body class="sideNav">
     <div id="top"></div>
@@ -124,65 +123,6 @@
                 As a thank you for continued support, returning customers will receive 35% off their 5th order.
             </p>
         </div>
-    </section>
-
-
-    <!--
-        ENQUIRY FORM
-        Neocities sends "form-action 'self'" and "connect-src 'self'" in its
-        CSP, so a free account cannot post this form to web3forms or any other
-        service. Instead form.js formats the answers into a prefilled text
-        message to Zara. The access_key below is kept ready in case the site
-        moves to a Supporter account or other hosting, where a real background
-        post would work again.
-    -->
-    <section class="enquiry">
-        <div class="enquiryHead reveal">
-            <p class="eyebrow">Or Send a Message</p>
-            <h2>Enquire</h2>
-            <div class="divider"><span></span></div>
-            <p>Fill this in and it will open a text to me with your details ready to send, so nothing gets missed.</p>
-        </div>
-
-        <form class="enquiryForm reveal" id="enquiryForm" novalidate>
-            <input type="hidden" name="access_key" value="a5edae25-ba88-40a5-bc0c-957d203f6d44">
-            <input type="hidden" name="subject" value="New enquiry from the Floral Finesse website">
-            <input type="hidden" name="from_name" value="Floral Finesse Website">
-
-            <!-- honeypot - people never see it, bots fill it in -->
-            <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1">
-
-            <label class="field">
-                <span>Name <em>*</em></span>
-                <input type="text" name="name" autocomplete="name" placeholder="Your name">
-            </label>
-
-            <div class="fieldRow">
-                <label class="field">
-                    <span>Email</span>
-                    <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
-                </label>
-
-                <label class="field">
-                    <span>Phone</span>
-                    <input type="tel" name="phone" autocomplete="tel" placeholder="07000 000000">
-                </label>
-            </div>
-
-            <label class="field">
-                <span>Your Enquiry <em>*</em></span>
-                <textarea name="message" rows="5" placeholder="Number of roses, colours, wrapping, ribbon, any add-ons, and the date you need it for"></textarea>
-            </label>
-
-            <p class="formHint">Please leave either an email or a phone number so I can reply.</p>
-
-            <div class="formActions">
-                <button type="submit" class="btn">Send by Text</button>
-                <button type="button" class="btn btnGhost" id="copyDetails">Copy Details</button>
-            </div>
-
-            <p class="formStatus" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
     </section>
 
 
